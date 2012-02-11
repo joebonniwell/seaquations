@@ -1,0 +1,1092 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F9A1A47144696EA000734A6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9A1A46144696EA000734A6 /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1FF0D13B144CB0DC00EBBF04 /* SeaquationsGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D13A144CB0DC00EBBF04 /* SeaquationsGameViewController.m */; };
+		1FF0D13E144CB0F800EBBF04 /* SeaquationsMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D13D144CB0F800EBBF04 /* SeaquationsMenuViewController.m */; };
+		1FF0D141144CB10D00EBBF04 /* SeaquationsBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D140144CB10D00EBBF04 /* SeaquationsBackgroundViewController.m */; };
+		1FF0D144144CB12700EBBF04 /* SeaquationsTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D143144CB12700EBBF04 /* SeaquationsTransitionViewController.m */; };
+		1FF0D147144CB14100EBBF04 /* SeaquationsGoVertexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D146144CB14100EBBF04 /* SeaquationsGoVertexViewController.m */; };
+		1FF0D14B144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D14A144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.m */; };
+		1FF0D14E144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D14D144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.m */; };
+		1FF0D151144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D150144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.m */; };
+		1FF0D15A144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D159144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.m */; };
+		1FF0D15D144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D15C144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.m */; };
+		1FF0D160144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D15F144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.m */; };
+		1FFE571C13BF85B8003D5673 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE571B13BF85B8003D5673 /* UIKit.framework */; };
+		1FFE571E13BF85B8003D5673 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE571D13BF85B8003D5673 /* Foundation.framework */; };
+		1FFE572013BF85B8003D5673 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE571F13BF85B8003D5673 /* CoreGraphics.framework */; };
+		1FFE572613BF85B8003D5673 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE572413BF85B8003D5673 /* InfoPlist.strings */; };
+		1FFE572913BF85B8003D5673 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE572813BF85B8003D5673 /* main.m */; };
+		1FFE572C13BF85B8003D5673 /* seaquationsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE572B13BF85B8003D5673 /* seaquationsAppDelegate.m */; };
+		1FFE573013BF85B8003D5673 /* seaquationsAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE572F13BF85B8003D5673 /* seaquationsAppDelegate_iPhone.m */; };
+		1FFE573313BF85B8003D5673 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE573113BF85B8003D5673 /* MainWindow_iPhone.xib */; };
+		1FFE573713BF85B8003D5673 /* seaquationsAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE573613BF85B8003D5673 /* seaquationsAppDelegate_iPad.m */; };
+		1FFE573A13BF85B8003D5673 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE573813BF85B8003D5673 /* MainWindow_iPad.xib */; };
+		1FFE574913BF85FD003D5673 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE574813BF85FD003D5673 /* Icon.png */; };
+		1FFE574B13BF8607003D5673 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE574A13BF8607003D5673 /* Icon@2x.png */; };
+		1FFE574D13BF8615003D5673 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE574C13BF8615003D5673 /* Default.png */; };
+		1FFE574F13BF861D003D5673 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE574E13BF861D003D5673 /* Default@2x.png */; };
+		1FFE575113BF862B003D5673 /* IconHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE575013BF862B003D5673 /* IconHD.png */; };
+		1FFE575313BF8644003D5673 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE575213BF8644003D5673 /* Default-Portrait~ipad.png */; };
+		1FFE582513BF88D0003D5673 /* ChimpKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE577113BF88CF003D5673 /* ChimpKit.m */; };
+		1FFE582613BF88D0003D5673 /* SubscribeAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE577313BF88CF003D5673 /* SubscribeAlertView.m */; };
+		1FFE584013BF88D0003D5673 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE57A113BF88CF003D5673 /* NSObject+SBJSON.m */; };
+		1FFE584113BF88D0003D5673 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE57A313BF88CF003D5673 /* NSString+SBJSON.m */; };
+		1FFE584213BF88D0003D5673 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE57A513BF88CF003D5673 /* SBJsonBase.m */; };
+		1FFE584313BF88D0003D5673 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE57A713BF88CF003D5673 /* SBJsonParser.m */; };
+		1FFE584413BF88D0003D5673 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE57A913BF88CF003D5673 /* SBJsonStreamWriter.m */; };
+		1FFE584513BF88D0003D5673 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE57AB13BF88CF003D5673 /* SBJsonWriter.m */; };
+		1FFE584A13BF88D0003D5673 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE57B413BF88CF003D5673 /* LICENSE */; };
+		1FFE58D713BF89D1003D5673 /* seaquationsGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE58D613BF89D1003D5673 /* seaquationsGameState.m */; };
+		1FFE58DA13BF89EF003D5673 /* seaquationsTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE58D913BF89EF003D5673 /* seaquationsTile.m */; };
+		1FFE58DD13BF8A10003D5673 /* GVDecimalNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE58DC13BF8A10003D5673 /* GVDecimalNumber.m */; };
+		1FFE58E013BF8A1D003D5673 /* GVOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE58DF13BF8A1D003D5673 /* GVOperator.m */; };
+		1FFE58E213BF8A52003D5673 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE58E113BF8A52003D5673 /* MessageUI.framework */; };
+		1FFE58E413BF8A60003D5673 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE58E313BF8A60003D5673 /* AVFoundation.framework */; };
+		1FFE58E613BF8A89003D5673 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE58E513BF8A89003D5673 /* QuartzCore.framework */; };
+		1FFE58E813BF8A96003D5673 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFE58E713BF8A96003D5673 /* AudioToolbox.framework */; };
+		1FFE591413BF99E2003D5673 /* Seaquations-AlarmSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591113BF99E2003D5673 /* Seaquations-AlarmSound.m4a */; };
+		1FFE591513BF99E2003D5673 /* Seaquations-BubbleTapSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591213BF99E2003D5673 /* Seaquations-BubbleTapSound.m4a */; };
+		1FFE591613BF99E2003D5673 /* Seaquations-GameEndSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591313BF99E2003D5673 /* Seaquations-GameEndSound.m4a */; };
+		1FFE593313BF9A0D003D5673 /* Seaquations-AlertBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591713BF9A0D003D5673 /* Seaquations-AlertBorder.png */; };
+		1FFE593413BF9A0D003D5673 /* Seaquations-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591813BF9A0D003D5673 /* Seaquations-Background.png */; };
+		1FFE593513BF9A0D003D5673 /* Seaquations-BackgroundCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591913BF9A0D003D5673 /* Seaquations-BackgroundCloud.png */; };
+		1FFE593713BF9A0D003D5673 /* Seaquations-Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591B13BF9A0D003D5673 /* Seaquations-Board.png */; };
+		1FFE593813BF9A0D003D5673 /* Seaquations-BoardTabbed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591C13BF9A0D003D5673 /* Seaquations-BoardTabbed.png */; };
+		1FFE593913BF9A0D003D5673 /* Seaquations-BoardTabLeftSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591D13BF9A0D003D5673 /* Seaquations-BoardTabLeftSelected.png */; };
+		1FFE593A13BF9A0D003D5673 /* Seaquations-BoardTabLeftUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591E13BF9A0D003D5673 /* Seaquations-BoardTabLeftUnselected.png */; };
+		1FFE593B13BF9A0D003D5673 /* Seaquations-BoardTabRightSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE591F13BF9A0D003D5673 /* Seaquations-BoardTabRightSelected.png */; };
+		1FFE593C13BF9A0D003D5673 /* Seaquations-BoardTabRightUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592013BF9A0D003D5673 /* Seaquations-BoardTabRightUnselected.png */; };
+		1FFE593D13BF9A0D003D5673 /* Seaquations-DifficultyButtonEasySelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592113BF9A0D003D5673 /* Seaquations-DifficultyButtonEasySelected.png */; };
+		1FFE593E13BF9A0D003D5673 /* Seaquations-DifficultyButtonEasyUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592213BF9A0D003D5673 /* Seaquations-DifficultyButtonEasyUnselected.png */; };
+		1FFE593F13BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592313BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalSelected.png */; };
+		1FFE594013BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalUnselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592413BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalUnselected.png */; };
+		1FFE594113BF9A0D003D5673 /* Seaquations-goVertexButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592513BF9A0D003D5673 /* Seaquations-goVertexButton.png */; };
+		1FFE594213BF9A0D003D5673 /* Seaquations-LeftCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592613BF9A0D003D5673 /* Seaquations-LeftCloud.png */; };
+		1FFE594313BF9A0D003D5673 /* Seaquations-MenuBubbleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592713BF9A0D003D5673 /* Seaquations-MenuBubbleButton.png */; };
+		1FFE594413BF9A0D003D5673 /* Seaquations-NewGameButtonEasy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592813BF9A0D003D5673 /* Seaquations-NewGameButtonEasy.png */; };
+		1FFE594513BF9A0D003D5673 /* Seaquations-NewGameButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592913BF9A0D003D5673 /* Seaquations-NewGameButtonNormal.png */; };
+		1FFE594613BF9A0D003D5673 /* Seaquations-PowerUpScore.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592A13BF9A0D003D5673 /* Seaquations-PowerUpScore.png */; };
+		1FFE594713BF9A0D003D5673 /* Seaquations-PowerUpTiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592B13BF9A0D003D5673 /* Seaquations-PowerUpTiles.png */; };
+		1FFE594813BF9A0D003D5673 /* Seaquations-PowerUpTime.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592C13BF9A0D003D5673 /* Seaquations-PowerUpTime.png */; };
+		1FFE594913BF9A0D003D5673 /* Seaquations-RightCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE592D13BF9A0D003D5673 /* Seaquations-RightCloud.png */; };
+		1FFE594C13BF9A0D003D5673 /* Seaquations-SymbolBubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE593013BF9A0D003D5673 /* Seaquations-SymbolBubble.png */; };
+		1FFE594D13BF9A0D003D5673 /* Seaquations-SymbolBubbleSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE593113BF9A0D003D5673 /* Seaquations-SymbolBubbleSelected.png */; };
+		1FFE594E13BF9A0D003D5673 /* Seaquations-TreasureChest.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE593213BF9A0D003D5673 /* Seaquations-TreasureChest.png */; };
+		1FFE596B13BF9A21003D5673 /* Seaquations-AlertBorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE594F13BF9A21003D5673 /* Seaquations-AlertBorder@2x.png */; };
+		1FFE596C13BF9A21003D5673 /* Seaquations-Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595013BF9A21003D5673 /* Seaquations-Background@2x.png */; };
+		1FFE596D13BF9A21003D5673 /* Seaquations-BackgroundCloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595113BF9A21003D5673 /* Seaquations-BackgroundCloud@2x.png */; };
+		1FFE596F13BF9A21003D5673 /* Seaquations-Board@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595313BF9A21003D5673 /* Seaquations-Board@2x.png */; };
+		1FFE597013BF9A21003D5673 /* Seaquations-BoardTabbed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595413BF9A21003D5673 /* Seaquations-BoardTabbed@2x.png */; };
+		1FFE597113BF9A21003D5673 /* Seaquations-BoardTabLeftSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595513BF9A21003D5673 /* Seaquations-BoardTabLeftSelected@2x.png */; };
+		1FFE597213BF9A21003D5673 /* Seaquations-BoardTabLeftUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595613BF9A21003D5673 /* Seaquations-BoardTabLeftUnselected@2x.png */; };
+		1FFE597313BF9A21003D5673 /* Seaquations-BoardTabRightSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595713BF9A21003D5673 /* Seaquations-BoardTabRightSelected@2x.png */; };
+		1FFE597413BF9A21003D5673 /* Seaquations-BoardTabRightUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595813BF9A21003D5673 /* Seaquations-BoardTabRightUnselected@2x.png */; };
+		1FFE597513BF9A21003D5673 /* Seaquations-DifficultyButtonEasySelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595913BF9A21003D5673 /* Seaquations-DifficultyButtonEasySelected@2x.png */; };
+		1FFE597613BF9A21003D5673 /* Seaquations-DifficultyButtonEasyUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595A13BF9A21003D5673 /* Seaquations-DifficultyButtonEasyUnselected@2x.png */; };
+		1FFE597713BF9A21003D5673 /* Seaquations-DifficultyButtonNormalSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595B13BF9A21003D5673 /* Seaquations-DifficultyButtonNormalSelected@2x.png */; };
+		1FFE597813BF9A21003D5673 /* Seaquations-DifficultyButtonNormalUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595C13BF9A21003D5673 /* Seaquations-DifficultyButtonNormalUnselected@2x.png */; };
+		1FFE597913BF9A21003D5673 /* Seaquations-goVertexButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595D13BF9A21003D5673 /* Seaquations-goVertexButton@2x.png */; };
+		1FFE597A13BF9A21003D5673 /* Seaquations-LeftCloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595E13BF9A21003D5673 /* Seaquations-LeftCloud@2x.png */; };
+		1FFE597B13BF9A21003D5673 /* Seaquations-MenuBubbleButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE595F13BF9A21003D5673 /* Seaquations-MenuBubbleButton@2x.png */; };
+		1FFE597C13BF9A21003D5673 /* Seaquations-NewGameButtonEasy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596013BF9A21003D5673 /* Seaquations-NewGameButtonEasy@2x.png */; };
+		1FFE597D13BF9A21003D5673 /* Seaquations-NewGameButtonNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596113BF9A21003D5673 /* Seaquations-NewGameButtonNormal@2x.png */; };
+		1FFE597E13BF9A21003D5673 /* Seaquations-PowerUpScore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596213BF9A21003D5673 /* Seaquations-PowerUpScore@2x.png */; };
+		1FFE597F13BF9A21003D5673 /* Seaquations-PowerUpTiles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596313BF9A21003D5673 /* Seaquations-PowerUpTiles@2x.png */; };
+		1FFE598013BF9A21003D5673 /* Seaquations-PowerUpTime@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596413BF9A21003D5673 /* Seaquations-PowerUpTime@2x.png */; };
+		1FFE598113BF9A21003D5673 /* Seaquations-RightCloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596513BF9A21003D5673 /* Seaquations-RightCloud@2x.png */; };
+		1FFE598413BF9A21003D5673 /* Seaquations-SymbolBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596813BF9A21003D5673 /* Seaquations-SymbolBubble@2x.png */; };
+		1FFE598513BF9A21003D5673 /* Seaquations-SymbolBubbleSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596913BF9A21003D5673 /* Seaquations-SymbolBubbleSelected@2x.png */; };
+		1FFE598613BF9A21003D5673 /* Seaquations-TreasureChest@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE596A13BF9A21003D5673 /* Seaquations-TreasureChest@2x.png */; };
+		1FFE59A313BF9A33003D5673 /* Seaquations-AlertBorderHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598713BF9A33003D5673 /* Seaquations-AlertBorderHD.png */; };
+		1FFE59A413BF9A33003D5673 /* Seaquations-BackgroundCloudHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598813BF9A33003D5673 /* Seaquations-BackgroundCloudHD.png */; };
+		1FFE59A613BF9A33003D5673 /* Seaquations-BackgroundHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598A13BF9A33003D5673 /* Seaquations-BackgroundHD.png */; };
+		1FFE59A713BF9A33003D5673 /* Seaquations-BoardHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598B13BF9A33003D5673 /* Seaquations-BoardHD.png */; };
+		1FFE59A813BF9A33003D5673 /* Seaquations-BoardTabbedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598C13BF9A33003D5673 /* Seaquations-BoardTabbedHD.png */; };
+		1FFE59A913BF9A33003D5673 /* Seaquations-BoardTabLeftSelectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598D13BF9A33003D5673 /* Seaquations-BoardTabLeftSelectedHD.png */; };
+		1FFE59AA13BF9A33003D5673 /* Seaquations-BoardTabLeftUnselectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598E13BF9A33003D5673 /* Seaquations-BoardTabLeftUnselectedHD.png */; };
+		1FFE59AB13BF9A33003D5673 /* Seaquations-BoardTabRightSelectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE598F13BF9A33003D5673 /* Seaquations-BoardTabRightSelectedHD.png */; };
+		1FFE59AC13BF9A33003D5673 /* Seaquations-BoardTabRightUnselectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599013BF9A33003D5673 /* Seaquations-BoardTabRightUnselectedHD.png */; };
+		1FFE59AD13BF9A33003D5673 /* Seaquations-DifficultyButtonEasySelectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599113BF9A33003D5673 /* Seaquations-DifficultyButtonEasySelectedHD.png */; };
+		1FFE59AE13BF9A33003D5673 /* Seaquations-DifficultyButtonEasyUnselectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599213BF9A33003D5673 /* Seaquations-DifficultyButtonEasyUnselectedHD.png */; };
+		1FFE59AF13BF9A33003D5673 /* Seaquations-DifficultyButtonNormalSelectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599313BF9A33003D5673 /* Seaquations-DifficultyButtonNormalSelectedHD.png */; };
+		1FFE59B013BF9A33003D5673 /* Seaquations-DifficultyButtonNormalUnselectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599413BF9A33003D5673 /* Seaquations-DifficultyButtonNormalUnselectedHD.png */; };
+		1FFE59B113BF9A33003D5673 /* Seaquations-goVertexButtonHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599513BF9A33003D5673 /* Seaquations-goVertexButtonHD.png */; };
+		1FFE59B213BF9A33003D5673 /* Seaquations-LeftCloudHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599613BF9A33003D5673 /* Seaquations-LeftCloudHD.png */; };
+		1FFE59B313BF9A33003D5673 /* Seaquations-MenuBubbleButtonHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599713BF9A33003D5673 /* Seaquations-MenuBubbleButtonHD.png */; };
+		1FFE59B413BF9A33003D5673 /* Seaquations-NewGameButtonEasyHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599813BF9A33003D5673 /* Seaquations-NewGameButtonEasyHD.png */; };
+		1FFE59B513BF9A33003D5673 /* Seaquations-NewGameButtonNormalHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599913BF9A33003D5673 /* Seaquations-NewGameButtonNormalHD.png */; };
+		1FFE59B613BF9A33003D5673 /* Seaquations-PowerUpScoreHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599A13BF9A33003D5673 /* Seaquations-PowerUpScoreHD.png */; };
+		1FFE59B713BF9A33003D5673 /* Seaquations-PowerUpTilesHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599B13BF9A33003D5673 /* Seaquations-PowerUpTilesHD.png */; };
+		1FFE59B813BF9A33003D5673 /* Seaquations-PowerUpTimeHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599C13BF9A33003D5673 /* Seaquations-PowerUpTimeHD.png */; };
+		1FFE59B913BF9A33003D5673 /* Seaquations-RightCloudHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE599D13BF9A33003D5673 /* Seaquations-RightCloudHD.png */; };
+		1FFE59BC13BF9A33003D5673 /* Seaquations-SymbolBubbleHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59A013BF9A33003D5673 /* Seaquations-SymbolBubbleHD.png */; };
+		1FFE59BD13BF9A33003D5673 /* Seaquations-SymbolBubbleSelectedHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59A113BF9A33003D5673 /* Seaquations-SymbolBubbleSelectedHD.png */; };
+		1FFE59BE13BF9A33003D5673 /* Seaquations-TreasureChestHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59A213BF9A33003D5673 /* Seaquations-TreasureChestHD.png */; };
+		1FFE59C013BF9ADB003D5673 /* goVertexLogoHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59BF13BF9ADB003D5673 /* goVertexLogoHD.png */; };
+		1FFE59C313BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingLeftHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59C113BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingLeftHD.png */; };
+		1FFE59C413BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingRightHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59C213BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingRightHD.png */; };
+		1FFE59C713BF9B88003D5673 /* Seaquations-BackgroundFishTravelingLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59C513BF9B88003D5673 /* Seaquations-BackgroundFishTravelingLeft@2x.png */; };
+		1FFE59C813BF9B88003D5673 /* Seaquations-BackgroundFishTravelingRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59C613BF9B88003D5673 /* Seaquations-BackgroundFishTravelingRight@2x.png */; };
+		1FFE59CB13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59C913BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingLeft.png */; };
+		1FFE59CC13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59CA13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingRight.png */; };
+		1FFE59D313BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn1HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59CD13BF9CF0003D5673 /* Seaquations-TransitionBubblesColumn1HD.png */; };
+		1FFE59D413BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn2HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59CE13BF9CF0003D5673 /* Seaquations-TransitionBubblesColumn2HD.png */; };
+		1FFE59D513BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn3HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59CF13BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn3HD.png */; };
+		1FFE59D613BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn4HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59D013BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn4HD.png */; };
+		1FFE59D713BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn5HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59D113BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn5HD.png */; };
+		1FFE59D813BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn6HD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59D213BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn6HD.png */; };
+		1FFE59DF13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59D913BF9D05003D5673 /* Seaquations-TransitionBubblesColumn1@2x.png */; };
+		1FFE59E013BF9D05003D5673 /* Seaquations-TransitionBubblesColumn2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59DA13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn2@2x.png */; };
+		1FFE59E113BF9D05003D5673 /* Seaquations-TransitionBubblesColumn3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59DB13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn3@2x.png */; };
+		1FFE59E213BF9D05003D5673 /* Seaquations-TransitionBubblesColumn4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59DC13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn4@2x.png */; };
+		1FFE59E313BF9D05003D5673 /* Seaquations-TransitionBubblesColumn5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59DD13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn5@2x.png */; };
+		1FFE59E413BF9D05003D5673 /* Seaquations-TransitionBubblesColumn6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59DE13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn6@2x.png */; };
+		1FFE59EB13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59E513BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn1.png */; };
+		1FFE59EC13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59E613BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn2.png */; };
+		1FFE59ED13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59E713BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn3.png */; };
+		1FFE59EE13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59E813BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn4.png */; };
+		1FFE59EF13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59E913BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn5.png */; };
+		1FFE59F013BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59EA13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn6.png */; };
+		1FFE59F213BF9D3B003D5673 /* Seaquations-BoardTextFieldInsetHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59F113BF9D3B003D5673 /* Seaquations-BoardTextFieldInsetHD.png */; };
+		1FFE59F413BF9D4F003D5673 /* Seaquations-BoardTextFieldInset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59F313BF9D4F003D5673 /* Seaquations-BoardTextFieldInset@2x.png */; };
+		1FFE59F613BF9D5D003D5673 /* Seaquations-BoardTextFieldInset.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59F513BF9D5D003D5673 /* Seaquations-BoardTextFieldInset.png */; };
+		1FFE59F913BFD6C5003D5673 /* Seaquations-SoundOffButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59F713BFD6C3003D5673 /* Seaquations-SoundOffButton.png */; };
+		1FFE59FA13BFD6C5003D5673 /* Seaquations-SoundOnButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59F813BFD6C4003D5673 /* Seaquations-SoundOnButton.png */; };
+		1FFE59FD13BFD6E9003D5673 /* Seaquations-SoundOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59FB13BFD6E9003D5673 /* Seaquations-SoundOff@2x.png */; };
+		1FFE59FE13BFD6E9003D5673 /* Seaquations-SoundOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59FC13BFD6E9003D5673 /* Seaquations-SoundOn@2x.png */; };
+		1FFE5A0113BFD705003D5673 /* Seaquations-SoundOffHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE59FF13BFD705003D5673 /* Seaquations-SoundOffHD.png */; };
+		1FFE5A0213BFD705003D5673 /* Seaquations-SoundOnHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0013BFD705003D5673 /* Seaquations-SoundOnHD.png */; };
+		1FFE5A0413BFD87B003D5673 /* goVertexLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0313BFD87B003D5673 /* goVertexLogo.png */; };
+		1FFE5A0613BFD885003D5673 /* goVertexLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0513BFD885003D5673 /* goVertexLogo@2x.png */; };
+		1FFE5A0D13BFDBFE003D5673 /* LocalyticsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0913BFDBFD003D5673 /* LocalyticsSession.m */; };
+		1FFE5A0E13BFDBFE003D5673 /* UploaderThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0B13BFDBFD003D5673 /* UploaderThread.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F9A1A46144696EA000734A6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		1FF0D139144CB0DC00EBBF04 /* SeaquationsGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsGameViewController.h; sourceTree = "<group>"; };
+		1FF0D13A144CB0DC00EBBF04 /* SeaquationsGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsGameViewController.m; sourceTree = "<group>"; };
+		1FF0D13C144CB0F800EBBF04 /* SeaquationsMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuViewController.h; sourceTree = "<group>"; };
+		1FF0D13D144CB0F800EBBF04 /* SeaquationsMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuViewController.m; sourceTree = "<group>"; };
+		1FF0D13F144CB10D00EBBF04 /* SeaquationsBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsBackgroundViewController.h; sourceTree = "<group>"; };
+		1FF0D140144CB10D00EBBF04 /* SeaquationsBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsBackgroundViewController.m; sourceTree = "<group>"; };
+		1FF0D142144CB12700EBBF04 /* SeaquationsTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsTransitionViewController.h; sourceTree = "<group>"; };
+		1FF0D143144CB12700EBBF04 /* SeaquationsTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsTransitionViewController.m; sourceTree = "<group>"; };
+		1FF0D145144CB14100EBBF04 /* SeaquationsGoVertexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsGoVertexViewController.h; sourceTree = "<group>"; };
+		1FF0D146144CB14100EBBF04 /* SeaquationsGoVertexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsGoVertexViewController.m; sourceTree = "<group>"; };
+		1FF0D149144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuView_MainMenu.h; sourceTree = "<group>"; };
+		1FF0D14A144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuView_MainMenu.m; sourceTree = "<group>"; };
+		1FF0D14C144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuView_MainMenuInProgressGame.h; sourceTree = "<group>"; };
+		1FF0D14D144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuView_MainMenuInProgressGame.m; sourceTree = "<group>"; };
+		1FF0D14F144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuView_HighScoresMenu.h; sourceTree = "<group>"; };
+		1FF0D150144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuView_HighScoresMenu.m; sourceTree = "<group>"; };
+		1FF0D158144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuView_HowToPlayMenu.h; sourceTree = "<group>"; };
+		1FF0D159144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuView_HowToPlayMenu.m; sourceTree = "<group>"; };
+		1FF0D15B144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuView_PostGameMenu.h; sourceTree = "<group>"; };
+		1FF0D15C144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuView_PostGameMenu.m; sourceTree = "<group>"; };
+		1FF0D15E144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsMenuView_PostGameMenuNewHighScore.h; sourceTree = "<group>"; };
+		1FF0D15F144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsMenuView_PostGameMenuNewHighScore.m; sourceTree = "<group>"; };
+		1FFE571713BF85B8003D5673 /* seaquations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = seaquations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFE571B13BF85B8003D5673 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FFE571D13BF85B8003D5673 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FFE571F13BF85B8003D5673 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FFE572313BF85B8003D5673 /* seaquations-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "seaquations-Info.plist"; sourceTree = "<group>"; };
+		1FFE572513BF85B8003D5673 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FFE572713BF85B8003D5673 /* seaquations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "seaquations-Prefix.pch"; sourceTree = "<group>"; };
+		1FFE572813BF85B8003D5673 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FFE572A13BF85B8003D5673 /* seaquationsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = seaquationsAppDelegate.h; sourceTree = "<group>"; };
+		1FFE572B13BF85B8003D5673 /* seaquationsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = seaquationsAppDelegate.m; sourceTree = "<group>"; };
+		1FFE572E13BF85B8003D5673 /* seaquationsAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = seaquationsAppDelegate_iPhone.h; path = iPhone/seaquationsAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		1FFE572F13BF85B8003D5673 /* seaquationsAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = seaquationsAppDelegate_iPhone.m; path = iPhone/seaquationsAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		1FFE573213BF85B8003D5673 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		1FFE573513BF85B8003D5673 /* seaquationsAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = seaquationsAppDelegate_iPad.h; path = iPad/seaquationsAppDelegate_iPad.h; sourceTree = "<group>"; };
+		1FFE573613BF85B8003D5673 /* seaquationsAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = seaquationsAppDelegate_iPad.m; path = iPad/seaquationsAppDelegate_iPad.m; sourceTree = "<group>"; };
+		1FFE573913BF85B8003D5673 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		1FFE574813BF85FD003D5673 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		1FFE574A13BF8607003D5673 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		1FFE574C13BF8615003D5673 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		1FFE574E13BF861D003D5673 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		1FFE575013BF862B003D5673 /* IconHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconHD.png; path = ../IconHD.png; sourceTree = "<group>"; };
+		1FFE575213BF8644003D5673 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		1FFE577013BF88CF003D5673 /* ChimpKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChimpKit.h; sourceTree = "<group>"; };
+		1FFE577113BF88CF003D5673 /* ChimpKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChimpKit.m; sourceTree = "<group>"; };
+		1FFE577213BF88CF003D5673 /* SubscribeAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscribeAlertView.h; sourceTree = "<group>"; };
+		1FFE577313BF88CF003D5673 /* SubscribeAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscribeAlertView.m; sourceTree = "<group>"; };
+		1FFE579F13BF88CF003D5673 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		1FFE57A013BF88CF003D5673 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		1FFE57A113BF88CF003D5673 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		1FFE57A213BF88CF003D5673 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		1FFE57A313BF88CF003D5673 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		1FFE57A413BF88CF003D5673 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		1FFE57A513BF88CF003D5673 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		1FFE57A613BF88CF003D5673 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		1FFE57A713BF88CF003D5673 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		1FFE57A813BF88CF003D5673 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		1FFE57A913BF88CF003D5673 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		1FFE57AA13BF88CF003D5673 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		1FFE57AB13BF88CF003D5673 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		1FFE57AC13BF88CF003D5673 /* SBProxyForJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBProxyForJson.h; sourceTree = "<group>"; };
+		1FFE57B413BF88CF003D5673 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1FFE58D513BF89D1003D5673 /* seaquationsGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seaquationsGameState.h; sourceTree = "<group>"; };
+		1FFE58D613BF89D1003D5673 /* seaquationsGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seaquationsGameState.m; sourceTree = "<group>"; };
+		1FFE58D813BF89EF003D5673 /* seaquationsTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seaquationsTile.h; sourceTree = "<group>"; };
+		1FFE58D913BF89EF003D5673 /* seaquationsTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seaquationsTile.m; sourceTree = "<group>"; };
+		1FFE58DB13BF8A10003D5673 /* GVDecimalNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVDecimalNumber.h; sourceTree = "<group>"; };
+		1FFE58DC13BF8A10003D5673 /* GVDecimalNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVDecimalNumber.m; sourceTree = "<group>"; };
+		1FFE58DE13BF8A1C003D5673 /* GVOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVOperator.h; sourceTree = "<group>"; };
+		1FFE58DF13BF8A1D003D5673 /* GVOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVOperator.m; sourceTree = "<group>"; };
+		1FFE58E113BF8A52003D5673 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1FFE58E313BF8A60003D5673 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1FFE58E513BF8A89003D5673 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1FFE58E713BF8A96003D5673 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1FFE591113BF99E2003D5673 /* Seaquations-AlarmSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seaquations-AlarmSound.m4a"; sourceTree = "<group>"; };
+		1FFE591213BF99E2003D5673 /* Seaquations-BubbleTapSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seaquations-BubbleTapSound.m4a"; sourceTree = "<group>"; };
+		1FFE591313BF99E2003D5673 /* Seaquations-GameEndSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seaquations-GameEndSound.m4a"; sourceTree = "<group>"; };
+		1FFE591713BF9A0D003D5673 /* Seaquations-AlertBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-AlertBorder.png"; sourceTree = "<group>"; };
+		1FFE591813BF9A0D003D5673 /* Seaquations-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-Background.png"; sourceTree = "<group>"; };
+		1FFE591913BF9A0D003D5673 /* Seaquations-BackgroundCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundCloud.png"; sourceTree = "<group>"; };
+		1FFE591B13BF9A0D003D5673 /* Seaquations-Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-Board.png"; sourceTree = "<group>"; };
+		1FFE591C13BF9A0D003D5673 /* Seaquations-BoardTabbed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabbed.png"; sourceTree = "<group>"; };
+		1FFE591D13BF9A0D003D5673 /* Seaquations-BoardTabLeftSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabLeftSelected.png"; sourceTree = "<group>"; };
+		1FFE591E13BF9A0D003D5673 /* Seaquations-BoardTabLeftUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabLeftUnselected.png"; sourceTree = "<group>"; };
+		1FFE591F13BF9A0D003D5673 /* Seaquations-BoardTabRightSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabRightSelected.png"; sourceTree = "<group>"; };
+		1FFE592013BF9A0D003D5673 /* Seaquations-BoardTabRightUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabRightUnselected.png"; sourceTree = "<group>"; };
+		1FFE592113BF9A0D003D5673 /* Seaquations-DifficultyButtonEasySelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonEasySelected.png"; sourceTree = "<group>"; };
+		1FFE592213BF9A0D003D5673 /* Seaquations-DifficultyButtonEasyUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonEasyUnselected.png"; sourceTree = "<group>"; };
+		1FFE592313BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonNormalSelected.png"; sourceTree = "<group>"; };
+		1FFE592413BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalUnselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonNormalUnselected.png"; sourceTree = "<group>"; };
+		1FFE592513BF9A0D003D5673 /* Seaquations-goVertexButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-goVertexButton.png"; sourceTree = "<group>"; };
+		1FFE592613BF9A0D003D5673 /* Seaquations-LeftCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-LeftCloud.png"; sourceTree = "<group>"; };
+		1FFE592713BF9A0D003D5673 /* Seaquations-MenuBubbleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-MenuBubbleButton.png"; sourceTree = "<group>"; };
+		1FFE592813BF9A0D003D5673 /* Seaquations-NewGameButtonEasy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-NewGameButtonEasy.png"; sourceTree = "<group>"; };
+		1FFE592913BF9A0D003D5673 /* Seaquations-NewGameButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-NewGameButtonNormal.png"; sourceTree = "<group>"; };
+		1FFE592A13BF9A0D003D5673 /* Seaquations-PowerUpScore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpScore.png"; sourceTree = "<group>"; };
+		1FFE592B13BF9A0D003D5673 /* Seaquations-PowerUpTiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpTiles.png"; sourceTree = "<group>"; };
+		1FFE592C13BF9A0D003D5673 /* Seaquations-PowerUpTime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpTime.png"; sourceTree = "<group>"; };
+		1FFE592D13BF9A0D003D5673 /* Seaquations-RightCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-RightCloud.png"; sourceTree = "<group>"; };
+		1FFE593013BF9A0D003D5673 /* Seaquations-SymbolBubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SymbolBubble.png"; sourceTree = "<group>"; };
+		1FFE593113BF9A0D003D5673 /* Seaquations-SymbolBubbleSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SymbolBubbleSelected.png"; sourceTree = "<group>"; };
+		1FFE593213BF9A0D003D5673 /* Seaquations-TreasureChest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TreasureChest.png"; sourceTree = "<group>"; };
+		1FFE594F13BF9A21003D5673 /* Seaquations-AlertBorder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-AlertBorder@2x.png"; sourceTree = "<group>"; };
+		1FFE595013BF9A21003D5673 /* Seaquations-Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-Background@2x.png"; sourceTree = "<group>"; };
+		1FFE595113BF9A21003D5673 /* Seaquations-BackgroundCloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundCloud@2x.png"; sourceTree = "<group>"; };
+		1FFE595313BF9A21003D5673 /* Seaquations-Board@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-Board@2x.png"; sourceTree = "<group>"; };
+		1FFE595413BF9A21003D5673 /* Seaquations-BoardTabbed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabbed@2x.png"; sourceTree = "<group>"; };
+		1FFE595513BF9A21003D5673 /* Seaquations-BoardTabLeftSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabLeftSelected@2x.png"; sourceTree = "<group>"; };
+		1FFE595613BF9A21003D5673 /* Seaquations-BoardTabLeftUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabLeftUnselected@2x.png"; sourceTree = "<group>"; };
+		1FFE595713BF9A21003D5673 /* Seaquations-BoardTabRightSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabRightSelected@2x.png"; sourceTree = "<group>"; };
+		1FFE595813BF9A21003D5673 /* Seaquations-BoardTabRightUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabRightUnselected@2x.png"; sourceTree = "<group>"; };
+		1FFE595913BF9A21003D5673 /* Seaquations-DifficultyButtonEasySelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonEasySelected@2x.png"; sourceTree = "<group>"; };
+		1FFE595A13BF9A21003D5673 /* Seaquations-DifficultyButtonEasyUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonEasyUnselected@2x.png"; sourceTree = "<group>"; };
+		1FFE595B13BF9A21003D5673 /* Seaquations-DifficultyButtonNormalSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonNormalSelected@2x.png"; sourceTree = "<group>"; };
+		1FFE595C13BF9A21003D5673 /* Seaquations-DifficultyButtonNormalUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonNormalUnselected@2x.png"; sourceTree = "<group>"; };
+		1FFE595D13BF9A21003D5673 /* Seaquations-goVertexButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-goVertexButton@2x.png"; sourceTree = "<group>"; };
+		1FFE595E13BF9A21003D5673 /* Seaquations-LeftCloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-LeftCloud@2x.png"; sourceTree = "<group>"; };
+		1FFE595F13BF9A21003D5673 /* Seaquations-MenuBubbleButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-MenuBubbleButton@2x.png"; sourceTree = "<group>"; };
+		1FFE596013BF9A21003D5673 /* Seaquations-NewGameButtonEasy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-NewGameButtonEasy@2x.png"; sourceTree = "<group>"; };
+		1FFE596113BF9A21003D5673 /* Seaquations-NewGameButtonNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-NewGameButtonNormal@2x.png"; sourceTree = "<group>"; };
+		1FFE596213BF9A21003D5673 /* Seaquations-PowerUpScore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpScore@2x.png"; sourceTree = "<group>"; };
+		1FFE596313BF9A21003D5673 /* Seaquations-PowerUpTiles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpTiles@2x.png"; sourceTree = "<group>"; };
+		1FFE596413BF9A21003D5673 /* Seaquations-PowerUpTime@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpTime@2x.png"; sourceTree = "<group>"; };
+		1FFE596513BF9A21003D5673 /* Seaquations-RightCloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-RightCloud@2x.png"; sourceTree = "<group>"; };
+		1FFE596813BF9A21003D5673 /* Seaquations-SymbolBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SymbolBubble@2x.png"; sourceTree = "<group>"; };
+		1FFE596913BF9A21003D5673 /* Seaquations-SymbolBubbleSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SymbolBubbleSelected@2x.png"; sourceTree = "<group>"; };
+		1FFE596A13BF9A21003D5673 /* Seaquations-TreasureChest@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TreasureChest@2x.png"; sourceTree = "<group>"; };
+		1FFE598713BF9A33003D5673 /* Seaquations-AlertBorderHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-AlertBorderHD.png"; sourceTree = "<group>"; };
+		1FFE598813BF9A33003D5673 /* Seaquations-BackgroundCloudHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundCloudHD.png"; sourceTree = "<group>"; };
+		1FFE598A13BF9A33003D5673 /* Seaquations-BackgroundHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundHD.png"; sourceTree = "<group>"; };
+		1FFE598B13BF9A33003D5673 /* Seaquations-BoardHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardHD.png"; sourceTree = "<group>"; };
+		1FFE598C13BF9A33003D5673 /* Seaquations-BoardTabbedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabbedHD.png"; sourceTree = "<group>"; };
+		1FFE598D13BF9A33003D5673 /* Seaquations-BoardTabLeftSelectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabLeftSelectedHD.png"; sourceTree = "<group>"; };
+		1FFE598E13BF9A33003D5673 /* Seaquations-BoardTabLeftUnselectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabLeftUnselectedHD.png"; sourceTree = "<group>"; };
+		1FFE598F13BF9A33003D5673 /* Seaquations-BoardTabRightSelectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabRightSelectedHD.png"; sourceTree = "<group>"; };
+		1FFE599013BF9A33003D5673 /* Seaquations-BoardTabRightUnselectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTabRightUnselectedHD.png"; sourceTree = "<group>"; };
+		1FFE599113BF9A33003D5673 /* Seaquations-DifficultyButtonEasySelectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonEasySelectedHD.png"; sourceTree = "<group>"; };
+		1FFE599213BF9A33003D5673 /* Seaquations-DifficultyButtonEasyUnselectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonEasyUnselectedHD.png"; sourceTree = "<group>"; };
+		1FFE599313BF9A33003D5673 /* Seaquations-DifficultyButtonNormalSelectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonNormalSelectedHD.png"; sourceTree = "<group>"; };
+		1FFE599413BF9A33003D5673 /* Seaquations-DifficultyButtonNormalUnselectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-DifficultyButtonNormalUnselectedHD.png"; sourceTree = "<group>"; };
+		1FFE599513BF9A33003D5673 /* Seaquations-goVertexButtonHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-goVertexButtonHD.png"; sourceTree = "<group>"; };
+		1FFE599613BF9A33003D5673 /* Seaquations-LeftCloudHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-LeftCloudHD.png"; sourceTree = "<group>"; };
+		1FFE599713BF9A33003D5673 /* Seaquations-MenuBubbleButtonHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-MenuBubbleButtonHD.png"; sourceTree = "<group>"; };
+		1FFE599813BF9A33003D5673 /* Seaquations-NewGameButtonEasyHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-NewGameButtonEasyHD.png"; sourceTree = "<group>"; };
+		1FFE599913BF9A33003D5673 /* Seaquations-NewGameButtonNormalHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-NewGameButtonNormalHD.png"; sourceTree = "<group>"; };
+		1FFE599A13BF9A33003D5673 /* Seaquations-PowerUpScoreHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpScoreHD.png"; sourceTree = "<group>"; };
+		1FFE599B13BF9A33003D5673 /* Seaquations-PowerUpTilesHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpTilesHD.png"; sourceTree = "<group>"; };
+		1FFE599C13BF9A33003D5673 /* Seaquations-PowerUpTimeHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-PowerUpTimeHD.png"; sourceTree = "<group>"; };
+		1FFE599D13BF9A33003D5673 /* Seaquations-RightCloudHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-RightCloudHD.png"; sourceTree = "<group>"; };
+		1FFE59A013BF9A33003D5673 /* Seaquations-SymbolBubbleHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SymbolBubbleHD.png"; sourceTree = "<group>"; };
+		1FFE59A113BF9A33003D5673 /* Seaquations-SymbolBubbleSelectedHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SymbolBubbleSelectedHD.png"; sourceTree = "<group>"; };
+		1FFE59A213BF9A33003D5673 /* Seaquations-TreasureChestHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TreasureChestHD.png"; sourceTree = "<group>"; };
+		1FFE59BF13BF9ADB003D5673 /* goVertexLogoHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goVertexLogoHD.png; sourceTree = "<group>"; };
+		1FFE59C113BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingLeftHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundFishTravelingLeftHD.png"; sourceTree = "<group>"; };
+		1FFE59C213BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingRightHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundFishTravelingRightHD.png"; sourceTree = "<group>"; };
+		1FFE59C513BF9B88003D5673 /* Seaquations-BackgroundFishTravelingLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundFishTravelingLeft@2x.png"; sourceTree = "<group>"; };
+		1FFE59C613BF9B88003D5673 /* Seaquations-BackgroundFishTravelingRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundFishTravelingRight@2x.png"; sourceTree = "<group>"; };
+		1FFE59C913BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundFishTravelingLeft.png"; sourceTree = "<group>"; };
+		1FFE59CA13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BackgroundFishTravelingRight.png"; sourceTree = "<group>"; };
+		1FFE59CD13BF9CF0003D5673 /* Seaquations-TransitionBubblesColumn1HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn1HD.png"; sourceTree = "<group>"; };
+		1FFE59CE13BF9CF0003D5673 /* Seaquations-TransitionBubblesColumn2HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn2HD.png"; sourceTree = "<group>"; };
+		1FFE59CF13BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn3HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn3HD.png"; sourceTree = "<group>"; };
+		1FFE59D013BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn4HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn4HD.png"; sourceTree = "<group>"; };
+		1FFE59D113BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn5HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn5HD.png"; sourceTree = "<group>"; };
+		1FFE59D213BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn6HD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn6HD.png"; sourceTree = "<group>"; };
+		1FFE59D913BF9D05003D5673 /* Seaquations-TransitionBubblesColumn1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn1@2x.png"; sourceTree = "<group>"; };
+		1FFE59DA13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn2@2x.png"; sourceTree = "<group>"; };
+		1FFE59DB13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn3@2x.png"; sourceTree = "<group>"; };
+		1FFE59DC13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn4@2x.png"; sourceTree = "<group>"; };
+		1FFE59DD13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn5@2x.png"; sourceTree = "<group>"; };
+		1FFE59DE13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn6@2x.png"; sourceTree = "<group>"; };
+		1FFE59E513BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn1.png"; sourceTree = "<group>"; };
+		1FFE59E613BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn2.png"; sourceTree = "<group>"; };
+		1FFE59E713BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn3.png"; sourceTree = "<group>"; };
+		1FFE59E813BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn4.png"; sourceTree = "<group>"; };
+		1FFE59E913BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn5.png"; sourceTree = "<group>"; };
+		1FFE59EA13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-TransitionBubblesColumn6.png"; sourceTree = "<group>"; };
+		1FFE59F113BF9D3B003D5673 /* Seaquations-BoardTextFieldInsetHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTextFieldInsetHD.png"; sourceTree = "<group>"; };
+		1FFE59F313BF9D4F003D5673 /* Seaquations-BoardTextFieldInset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTextFieldInset@2x.png"; sourceTree = "<group>"; };
+		1FFE59F513BF9D5D003D5673 /* Seaquations-BoardTextFieldInset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-BoardTextFieldInset.png"; sourceTree = "<group>"; };
+		1FFE59F713BFD6C3003D5673 /* Seaquations-SoundOffButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOffButton.png"; sourceTree = "<group>"; };
+		1FFE59F813BFD6C4003D5673 /* Seaquations-SoundOnButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOnButton.png"; sourceTree = "<group>"; };
+		1FFE59FB13BFD6E9003D5673 /* Seaquations-SoundOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOff@2x.png"; sourceTree = "<group>"; };
+		1FFE59FC13BFD6E9003D5673 /* Seaquations-SoundOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOn@2x.png"; sourceTree = "<group>"; };
+		1FFE59FF13BFD705003D5673 /* Seaquations-SoundOffHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOffHD.png"; sourceTree = "<group>"; };
+		1FFE5A0013BFD705003D5673 /* Seaquations-SoundOnHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOnHD.png"; sourceTree = "<group>"; };
+		1FFE5A0313BFD87B003D5673 /* goVertexLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goVertexLogo.png; sourceTree = "<group>"; };
+		1FFE5A0513BFD885003D5673 /* goVertexLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goVertexLogo@2x.png"; sourceTree = "<group>"; };
+		1FFE5A0813BFDBFD003D5673 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
+		1FFE5A0913BFDBFD003D5673 /* LocalyticsSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsSession.m; sourceTree = "<group>"; };
+		1FFE5A0A13BFDBFD003D5673 /* UploaderThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploaderThread.h; sourceTree = "<group>"; };
+		1FFE5A0B13BFDBFD003D5673 /* UploaderThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploaderThread.m; sourceTree = "<group>"; };
+		1FFE5A0C13BFDBFD003D5673 /* WebserviceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceConstants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FFE571413BF85B8003D5673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9A1A47144696EA000734A6 /* GameKit.framework in Frameworks */,
+				1FFE58E813BF8A96003D5673 /* AudioToolbox.framework in Frameworks */,
+				1FFE58E613BF8A89003D5673 /* QuartzCore.framework in Frameworks */,
+				1FFE58E413BF8A60003D5673 /* AVFoundation.framework in Frameworks */,
+				1FFE58E213BF8A52003D5673 /* MessageUI.framework in Frameworks */,
+				1FFE571C13BF85B8003D5673 /* UIKit.framework in Frameworks */,
+				1FFE571E13BF85B8003D5673 /* Foundation.framework in Frameworks */,
+				1FFE572013BF85B8003D5673 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FF0D138144CB0B200EBBF04 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0D139144CB0DC00EBBF04 /* SeaquationsGameViewController.h */,
+				1FF0D13A144CB0DC00EBBF04 /* SeaquationsGameViewController.m */,
+				1FF0D13C144CB0F800EBBF04 /* SeaquationsMenuViewController.h */,
+				1FF0D13D144CB0F800EBBF04 /* SeaquationsMenuViewController.m */,
+				1FF0D148144CC0A300EBBF04 /* MenuViews */,
+				1FF0D13F144CB10D00EBBF04 /* SeaquationsBackgroundViewController.h */,
+				1FF0D140144CB10D00EBBF04 /* SeaquationsBackgroundViewController.m */,
+				1FF0D142144CB12700EBBF04 /* SeaquationsTransitionViewController.h */,
+				1FF0D143144CB12700EBBF04 /* SeaquationsTransitionViewController.m */,
+				1FF0D145144CB14100EBBF04 /* SeaquationsGoVertexViewController.h */,
+				1FF0D146144CB14100EBBF04 /* SeaquationsGoVertexViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1FF0D148144CC0A300EBBF04 /* MenuViews */ = {
+			isa = PBXGroup;
+			children = (
+				1FF0D149144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.h */,
+				1FF0D14A144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.m */,
+				1FF0D14C144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.h */,
+				1FF0D14D144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.m */,
+				1FF0D14F144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.h */,
+				1FF0D150144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.m */,
+				1FF0D158144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.h */,
+				1FF0D159144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.m */,
+				1FF0D15B144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.h */,
+				1FF0D15C144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.m */,
+				1FF0D15E144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.h */,
+				1FF0D15F144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.m */,
+			);
+			name = MenuViews;
+			sourceTree = "<group>";
+		};
+		1FFE570C13BF85B7003D5673 = {
+			isa = PBXGroup;
+			children = (
+				1FFE572113BF85B8003D5673 /* seaquations */,
+				1FFE571A13BF85B8003D5673 /* Frameworks */,
+				1FFE571813BF85B8003D5673 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FFE571813BF85B8003D5673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE571713BF85B8003D5673 /* seaquations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FFE571A13BF85B8003D5673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F9A1A46144696EA000734A6 /* GameKit.framework */,
+				1FFE58E713BF8A96003D5673 /* AudioToolbox.framework */,
+				1FFE58E513BF8A89003D5673 /* QuartzCore.framework */,
+				1FFE58E313BF8A60003D5673 /* AVFoundation.framework */,
+				1FFE58E113BF8A52003D5673 /* MessageUI.framework */,
+				1FFE571B13BF85B8003D5673 /* UIKit.framework */,
+				1FFE571D13BF85B8003D5673 /* Foundation.framework */,
+				1FFE571F13BF85B8003D5673 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FFE572113BF85B8003D5673 /* seaquations */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE572A13BF85B8003D5673 /* seaquationsAppDelegate.h */,
+				1FFE572B13BF85B8003D5673 /* seaquationsAppDelegate.m */,
+				1FF0D138144CB0B200EBBF04 /* ViewControllers */,
+				1FFE572D13BF85B8003D5673 /* iPhone */,
+				1FFE573413BF85B8003D5673 /* iPad */,
+				1FFE575D13BF87A3003D5673 /* Shared */,
+				1FFE572213BF85B8003D5673 /* Supporting Files */,
+			);
+			path = seaquations;
+			sourceTree = "<group>";
+		};
+		1FFE572213BF85B8003D5673 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE590D13BF994D003D5673 /* Images */,
+				1FFE590C13BF9944003D5673 /* Sounds */,
+				1FFE572313BF85B8003D5673 /* seaquations-Info.plist */,
+				1FFE572413BF85B8003D5673 /* InfoPlist.strings */,
+				1FFE572713BF85B8003D5673 /* seaquations-Prefix.pch */,
+				1FFE572813BF85B8003D5673 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FFE572D13BF85B8003D5673 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE572E13BF85B8003D5673 /* seaquationsAppDelegate_iPhone.h */,
+				1FFE572F13BF85B8003D5673 /* seaquationsAppDelegate_iPhone.m */,
+				1FFE573113BF85B8003D5673 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		1FFE573413BF85B8003D5673 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE573513BF85B8003D5673 /* seaquationsAppDelegate_iPad.h */,
+				1FFE573613BF85B8003D5673 /* seaquationsAppDelegate_iPad.m */,
+				1FFE573813BF85B8003D5673 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		1FFE575D13BF87A3003D5673 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE5A0713BFDBDE003D5673 /* Localytics */,
+				1FFE58BF13BF88D7003D5673 /* ChimpKit */,
+				1FFE58D513BF89D1003D5673 /* seaquationsGameState.h */,
+				1FFE58D613BF89D1003D5673 /* seaquationsGameState.m */,
+				1FFE58D813BF89EF003D5673 /* seaquationsTile.h */,
+				1FFE58D913BF89EF003D5673 /* seaquationsTile.m */,
+				1FFE58DB13BF8A10003D5673 /* GVDecimalNumber.h */,
+				1FFE58DC13BF8A10003D5673 /* GVDecimalNumber.m */,
+				1FFE58DE13BF8A1C003D5673 /* GVOperator.h */,
+				1FFE58DF13BF8A1D003D5673 /* GVOperator.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		1FFE576F13BF88CF003D5673 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE577013BF88CF003D5673 /* ChimpKit.h */,
+				1FFE577113BF88CF003D5673 /* ChimpKit.m */,
+				1FFE577213BF88CF003D5673 /* SubscribeAlertView.h */,
+				1FFE577313BF88CF003D5673 /* SubscribeAlertView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1FFE577413BF88CF003D5673 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE577513BF88CF003D5673 /* JSON */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		1FFE577513BF88CF003D5673 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE579E13BF88CF003D5673 /* Classes */,
+				1FFE57B413BF88CF003D5673 /* LICENSE */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1FFE579E13BF88CF003D5673 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE579F13BF88CF003D5673 /* JSON.h */,
+				1FFE57A013BF88CF003D5673 /* NSObject+SBJSON.h */,
+				1FFE57A113BF88CF003D5673 /* NSObject+SBJSON.m */,
+				1FFE57A213BF88CF003D5673 /* NSString+SBJSON.h */,
+				1FFE57A313BF88CF003D5673 /* NSString+SBJSON.m */,
+				1FFE57A413BF88CF003D5673 /* SBJsonBase.h */,
+				1FFE57A513BF88CF003D5673 /* SBJsonBase.m */,
+				1FFE57A613BF88CF003D5673 /* SBJsonParser.h */,
+				1FFE57A713BF88CF003D5673 /* SBJsonParser.m */,
+				1FFE57A813BF88CF003D5673 /* SBJsonStreamWriter.h */,
+				1FFE57A913BF88CF003D5673 /* SBJsonStreamWriter.m */,
+				1FFE57AA13BF88CF003D5673 /* SBJsonWriter.h */,
+				1FFE57AB13BF88CF003D5673 /* SBJsonWriter.m */,
+				1FFE57AC13BF88CF003D5673 /* SBProxyForJson.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1FFE58BF13BF88D7003D5673 /* ChimpKit */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE576F13BF88CF003D5673 /* Classes */,
+				1FFE577413BF88CF003D5673 /* Libs */,
+			);
+			name = ChimpKit;
+			sourceTree = "<group>";
+		};
+		1FFE590C13BF9944003D5673 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE591113BF99E2003D5673 /* Seaquations-AlarmSound.m4a */,
+				1FFE591213BF99E2003D5673 /* Seaquations-BubbleTapSound.m4a */,
+				1FFE591313BF99E2003D5673 /* Seaquations-GameEndSound.m4a */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		1FFE590D13BF994D003D5673 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE590E13BF995A003D5673 /* Standard */,
+				1FFE591013BF9968003D5673 /* @2x */,
+				1FFE590F13BF9964003D5673 /* HD */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1FFE590E13BF995A003D5673 /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE574813BF85FD003D5673 /* Icon.png */,
+				1FFE574C13BF8615003D5673 /* Default.png */,
+				1FFE5A0313BFD87B003D5673 /* goVertexLogo.png */,
+				1FFE59F713BFD6C3003D5673 /* Seaquations-SoundOffButton.png */,
+				1FFE59F813BFD6C4003D5673 /* Seaquations-SoundOnButton.png */,
+				1FFE59F513BF9D5D003D5673 /* Seaquations-BoardTextFieldInset.png */,
+				1FFE59E513BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn1.png */,
+				1FFE59E613BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn2.png */,
+				1FFE59E713BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn3.png */,
+				1FFE59E813BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn4.png */,
+				1FFE59E913BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn5.png */,
+				1FFE59EA13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn6.png */,
+				1FFE59C913BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingLeft.png */,
+				1FFE59CA13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingRight.png */,
+				1FFE591713BF9A0D003D5673 /* Seaquations-AlertBorder.png */,
+				1FFE591813BF9A0D003D5673 /* Seaquations-Background.png */,
+				1FFE591913BF9A0D003D5673 /* Seaquations-BackgroundCloud.png */,
+				1FFE591B13BF9A0D003D5673 /* Seaquations-Board.png */,
+				1FFE591C13BF9A0D003D5673 /* Seaquations-BoardTabbed.png */,
+				1FFE591D13BF9A0D003D5673 /* Seaquations-BoardTabLeftSelected.png */,
+				1FFE591E13BF9A0D003D5673 /* Seaquations-BoardTabLeftUnselected.png */,
+				1FFE591F13BF9A0D003D5673 /* Seaquations-BoardTabRightSelected.png */,
+				1FFE592013BF9A0D003D5673 /* Seaquations-BoardTabRightUnselected.png */,
+				1FFE592113BF9A0D003D5673 /* Seaquations-DifficultyButtonEasySelected.png */,
+				1FFE592213BF9A0D003D5673 /* Seaquations-DifficultyButtonEasyUnselected.png */,
+				1FFE592313BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalSelected.png */,
+				1FFE592413BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalUnselected.png */,
+				1FFE592513BF9A0D003D5673 /* Seaquations-goVertexButton.png */,
+				1FFE592613BF9A0D003D5673 /* Seaquations-LeftCloud.png */,
+				1FFE592713BF9A0D003D5673 /* Seaquations-MenuBubbleButton.png */,
+				1FFE592813BF9A0D003D5673 /* Seaquations-NewGameButtonEasy.png */,
+				1FFE592913BF9A0D003D5673 /* Seaquations-NewGameButtonNormal.png */,
+				1FFE592A13BF9A0D003D5673 /* Seaquations-PowerUpScore.png */,
+				1FFE592B13BF9A0D003D5673 /* Seaquations-PowerUpTiles.png */,
+				1FFE592C13BF9A0D003D5673 /* Seaquations-PowerUpTime.png */,
+				1FFE592D13BF9A0D003D5673 /* Seaquations-RightCloud.png */,
+				1FFE593013BF9A0D003D5673 /* Seaquations-SymbolBubble.png */,
+				1FFE593113BF9A0D003D5673 /* Seaquations-SymbolBubbleSelected.png */,
+				1FFE593213BF9A0D003D5673 /* Seaquations-TreasureChest.png */,
+			);
+			name = Standard;
+			sourceTree = "<group>";
+		};
+		1FFE590F13BF9964003D5673 /* HD */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE575213BF8644003D5673 /* Default-Portrait~ipad.png */,
+				1FFE575013BF862B003D5673 /* IconHD.png */,
+				1FFE59FF13BFD705003D5673 /* Seaquations-SoundOffHD.png */,
+				1FFE5A0013BFD705003D5673 /* Seaquations-SoundOnHD.png */,
+				1FFE59F113BF9D3B003D5673 /* Seaquations-BoardTextFieldInsetHD.png */,
+				1FFE59CD13BF9CF0003D5673 /* Seaquations-TransitionBubblesColumn1HD.png */,
+				1FFE59CE13BF9CF0003D5673 /* Seaquations-TransitionBubblesColumn2HD.png */,
+				1FFE59CF13BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn3HD.png */,
+				1FFE59D013BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn4HD.png */,
+				1FFE59D113BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn5HD.png */,
+				1FFE59D213BF9CF1003D5673 /* Seaquations-TransitionBubblesColumn6HD.png */,
+				1FFE59C113BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingLeftHD.png */,
+				1FFE59C213BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingRightHD.png */,
+				1FFE59BF13BF9ADB003D5673 /* goVertexLogoHD.png */,
+				1FFE598713BF9A33003D5673 /* Seaquations-AlertBorderHD.png */,
+				1FFE598813BF9A33003D5673 /* Seaquations-BackgroundCloudHD.png */,
+				1FFE598A13BF9A33003D5673 /* Seaquations-BackgroundHD.png */,
+				1FFE598B13BF9A33003D5673 /* Seaquations-BoardHD.png */,
+				1FFE598C13BF9A33003D5673 /* Seaquations-BoardTabbedHD.png */,
+				1FFE598D13BF9A33003D5673 /* Seaquations-BoardTabLeftSelectedHD.png */,
+				1FFE598E13BF9A33003D5673 /* Seaquations-BoardTabLeftUnselectedHD.png */,
+				1FFE598F13BF9A33003D5673 /* Seaquations-BoardTabRightSelectedHD.png */,
+				1FFE599013BF9A33003D5673 /* Seaquations-BoardTabRightUnselectedHD.png */,
+				1FFE599113BF9A33003D5673 /* Seaquations-DifficultyButtonEasySelectedHD.png */,
+				1FFE599213BF9A33003D5673 /* Seaquations-DifficultyButtonEasyUnselectedHD.png */,
+				1FFE599313BF9A33003D5673 /* Seaquations-DifficultyButtonNormalSelectedHD.png */,
+				1FFE599413BF9A33003D5673 /* Seaquations-DifficultyButtonNormalUnselectedHD.png */,
+				1FFE599513BF9A33003D5673 /* Seaquations-goVertexButtonHD.png */,
+				1FFE599613BF9A33003D5673 /* Seaquations-LeftCloudHD.png */,
+				1FFE599713BF9A33003D5673 /* Seaquations-MenuBubbleButtonHD.png */,
+				1FFE599813BF9A33003D5673 /* Seaquations-NewGameButtonEasyHD.png */,
+				1FFE599913BF9A33003D5673 /* Seaquations-NewGameButtonNormalHD.png */,
+				1FFE599A13BF9A33003D5673 /* Seaquations-PowerUpScoreHD.png */,
+				1FFE599B13BF9A33003D5673 /* Seaquations-PowerUpTilesHD.png */,
+				1FFE599C13BF9A33003D5673 /* Seaquations-PowerUpTimeHD.png */,
+				1FFE599D13BF9A33003D5673 /* Seaquations-RightCloudHD.png */,
+				1FFE59A013BF9A33003D5673 /* Seaquations-SymbolBubbleHD.png */,
+				1FFE59A113BF9A33003D5673 /* Seaquations-SymbolBubbleSelectedHD.png */,
+				1FFE59A213BF9A33003D5673 /* Seaquations-TreasureChestHD.png */,
+			);
+			name = HD;
+			sourceTree = "<group>";
+		};
+		1FFE591013BF9968003D5673 /* @2x */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE574E13BF861D003D5673 /* Default@2x.png */,
+				1FFE574A13BF8607003D5673 /* Icon@2x.png */,
+				1FFE5A0513BFD885003D5673 /* goVertexLogo@2x.png */,
+				1FFE59FB13BFD6E9003D5673 /* Seaquations-SoundOff@2x.png */,
+				1FFE59FC13BFD6E9003D5673 /* Seaquations-SoundOn@2x.png */,
+				1FFE59F313BF9D4F003D5673 /* Seaquations-BoardTextFieldInset@2x.png */,
+				1FFE59D913BF9D05003D5673 /* Seaquations-TransitionBubblesColumn1@2x.png */,
+				1FFE59DA13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn2@2x.png */,
+				1FFE59DB13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn3@2x.png */,
+				1FFE59DC13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn4@2x.png */,
+				1FFE59DD13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn5@2x.png */,
+				1FFE59DE13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn6@2x.png */,
+				1FFE59C513BF9B88003D5673 /* Seaquations-BackgroundFishTravelingLeft@2x.png */,
+				1FFE59C613BF9B88003D5673 /* Seaquations-BackgroundFishTravelingRight@2x.png */,
+				1FFE594F13BF9A21003D5673 /* Seaquations-AlertBorder@2x.png */,
+				1FFE595013BF9A21003D5673 /* Seaquations-Background@2x.png */,
+				1FFE595113BF9A21003D5673 /* Seaquations-BackgroundCloud@2x.png */,
+				1FFE595313BF9A21003D5673 /* Seaquations-Board@2x.png */,
+				1FFE595413BF9A21003D5673 /* Seaquations-BoardTabbed@2x.png */,
+				1FFE595513BF9A21003D5673 /* Seaquations-BoardTabLeftSelected@2x.png */,
+				1FFE595613BF9A21003D5673 /* Seaquations-BoardTabLeftUnselected@2x.png */,
+				1FFE595713BF9A21003D5673 /* Seaquations-BoardTabRightSelected@2x.png */,
+				1FFE595813BF9A21003D5673 /* Seaquations-BoardTabRightUnselected@2x.png */,
+				1FFE595913BF9A21003D5673 /* Seaquations-DifficultyButtonEasySelected@2x.png */,
+				1FFE595A13BF9A21003D5673 /* Seaquations-DifficultyButtonEasyUnselected@2x.png */,
+				1FFE595B13BF9A21003D5673 /* Seaquations-DifficultyButtonNormalSelected@2x.png */,
+				1FFE595C13BF9A21003D5673 /* Seaquations-DifficultyButtonNormalUnselected@2x.png */,
+				1FFE595D13BF9A21003D5673 /* Seaquations-goVertexButton@2x.png */,
+				1FFE595E13BF9A21003D5673 /* Seaquations-LeftCloud@2x.png */,
+				1FFE595F13BF9A21003D5673 /* Seaquations-MenuBubbleButton@2x.png */,
+				1FFE596013BF9A21003D5673 /* Seaquations-NewGameButtonEasy@2x.png */,
+				1FFE596113BF9A21003D5673 /* Seaquations-NewGameButtonNormal@2x.png */,
+				1FFE596213BF9A21003D5673 /* Seaquations-PowerUpScore@2x.png */,
+				1FFE596313BF9A21003D5673 /* Seaquations-PowerUpTiles@2x.png */,
+				1FFE596413BF9A21003D5673 /* Seaquations-PowerUpTime@2x.png */,
+				1FFE596513BF9A21003D5673 /* Seaquations-RightCloud@2x.png */,
+				1FFE596813BF9A21003D5673 /* Seaquations-SymbolBubble@2x.png */,
+				1FFE596913BF9A21003D5673 /* Seaquations-SymbolBubbleSelected@2x.png */,
+				1FFE596A13BF9A21003D5673 /* Seaquations-TreasureChest@2x.png */,
+			);
+			name = "@2x";
+			sourceTree = "<group>";
+		};
+		1FFE5A0713BFDBDE003D5673 /* Localytics */ = {
+			isa = PBXGroup;
+			children = (
+				1FFE5A0813BFDBFD003D5673 /* LocalyticsSession.h */,
+				1FFE5A0913BFDBFD003D5673 /* LocalyticsSession.m */,
+				1FFE5A0A13BFDBFD003D5673 /* UploaderThread.h */,
+				1FFE5A0B13BFDBFD003D5673 /* UploaderThread.m */,
+				1FFE5A0C13BFDBFD003D5673 /* WebserviceConstants.h */,
+			);
+			name = Localytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FFE571613BF85B8003D5673 /* seaquations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFE573D13BF85B8003D5673 /* Build configuration list for PBXNativeTarget "seaquations" */;
+			buildPhases = (
+				1FFE571313BF85B8003D5673 /* Sources */,
+				1FFE571413BF85B8003D5673 /* Frameworks */,
+				1FFE571513BF85B8003D5673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = seaquations;
+			productName = seaquations;
+			productReference = 1FFE571713BF85B8003D5673 /* seaquations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FFE570E13BF85B7003D5673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1FFE571113BF85B7003D5673 /* Build configuration list for PBXProject "seaquations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1FFE570C13BF85B7003D5673;
+			productRefGroup = 1FFE571813BF85B8003D5673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FFE571613BF85B8003D5673 /* seaquations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FFE571513BF85B8003D5673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFE572613BF85B8003D5673 /* InfoPlist.strings in Resources */,
+				1FFE573313BF85B8003D5673 /* MainWindow_iPhone.xib in Resources */,
+				1FFE573A13BF85B8003D5673 /* MainWindow_iPad.xib in Resources */,
+				1FFE574913BF85FD003D5673 /* Icon.png in Resources */,
+				1FFE574B13BF8607003D5673 /* Icon@2x.png in Resources */,
+				1FFE574D13BF8615003D5673 /* Default.png in Resources */,
+				1FFE574F13BF861D003D5673 /* Default@2x.png in Resources */,
+				1FFE575113BF862B003D5673 /* IconHD.png in Resources */,
+				1FFE575313BF8644003D5673 /* Default-Portrait~ipad.png in Resources */,
+				1FFE584A13BF88D0003D5673 /* LICENSE in Resources */,
+				1FFE591413BF99E2003D5673 /* Seaquations-AlarmSound.m4a in Resources */,
+				1FFE591513BF99E2003D5673 /* Seaquations-BubbleTapSound.m4a in Resources */,
+				1FFE591613BF99E2003D5673 /* Seaquations-GameEndSound.m4a in Resources */,
+				1FFE593313BF9A0D003D5673 /* Seaquations-AlertBorder.png in Resources */,
+				1FFE593413BF9A0D003D5673 /* Seaquations-Background.png in Resources */,
+				1FFE593513BF9A0D003D5673 /* Seaquations-BackgroundCloud.png in Resources */,
+				1FFE593713BF9A0D003D5673 /* Seaquations-Board.png in Resources */,
+				1FFE593813BF9A0D003D5673 /* Seaquations-BoardTabbed.png in Resources */,
+				1FFE593913BF9A0D003D5673 /* Seaquations-BoardTabLeftSelected.png in Resources */,
+				1FFE593A13BF9A0D003D5673 /* Seaquations-BoardTabLeftUnselected.png in Resources */,
+				1FFE593B13BF9A0D003D5673 /* Seaquations-BoardTabRightSelected.png in Resources */,
+				1FFE593C13BF9A0D003D5673 /* Seaquations-BoardTabRightUnselected.png in Resources */,
+				1FFE593D13BF9A0D003D5673 /* Seaquations-DifficultyButtonEasySelected.png in Resources */,
+				1FFE593E13BF9A0D003D5673 /* Seaquations-DifficultyButtonEasyUnselected.png in Resources */,
+				1FFE593F13BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalSelected.png in Resources */,
+				1FFE594013BF9A0D003D5673 /* Seaquations-DifficultyButtonNormalUnselected.png in Resources */,
+				1FFE594113BF9A0D003D5673 /* Seaquations-goVertexButton.png in Resources */,
+				1FFE594213BF9A0D003D5673 /* Seaquations-LeftCloud.png in Resources */,
+				1FFE594313BF9A0D003D5673 /* Seaquations-MenuBubbleButton.png in Resources */,
+				1FFE594413BF9A0D003D5673 /* Seaquations-NewGameButtonEasy.png in Resources */,
+				1FFE594513BF9A0D003D5673 /* Seaquations-NewGameButtonNormal.png in Resources */,
+				1FFE594613BF9A0D003D5673 /* Seaquations-PowerUpScore.png in Resources */,
+				1FFE594713BF9A0D003D5673 /* Seaquations-PowerUpTiles.png in Resources */,
+				1FFE594813BF9A0D003D5673 /* Seaquations-PowerUpTime.png in Resources */,
+				1FFE594913BF9A0D003D5673 /* Seaquations-RightCloud.png in Resources */,
+				1FFE594C13BF9A0D003D5673 /* Seaquations-SymbolBubble.png in Resources */,
+				1FFE594D13BF9A0D003D5673 /* Seaquations-SymbolBubbleSelected.png in Resources */,
+				1FFE594E13BF9A0D003D5673 /* Seaquations-TreasureChest.png in Resources */,
+				1FFE596B13BF9A21003D5673 /* Seaquations-AlertBorder@2x.png in Resources */,
+				1FFE596C13BF9A21003D5673 /* Seaquations-Background@2x.png in Resources */,
+				1FFE596D13BF9A21003D5673 /* Seaquations-BackgroundCloud@2x.png in Resources */,
+				1FFE596F13BF9A21003D5673 /* Seaquations-Board@2x.png in Resources */,
+				1FFE597013BF9A21003D5673 /* Seaquations-BoardTabbed@2x.png in Resources */,
+				1FFE597113BF9A21003D5673 /* Seaquations-BoardTabLeftSelected@2x.png in Resources */,
+				1FFE597213BF9A21003D5673 /* Seaquations-BoardTabLeftUnselected@2x.png in Resources */,
+				1FFE597313BF9A21003D5673 /* Seaquations-BoardTabRightSelected@2x.png in Resources */,
+				1FFE597413BF9A21003D5673 /* Seaquations-BoardTabRightUnselected@2x.png in Resources */,
+				1FFE597513BF9A21003D5673 /* Seaquations-DifficultyButtonEasySelected@2x.png in Resources */,
+				1FFE597613BF9A21003D5673 /* Seaquations-DifficultyButtonEasyUnselected@2x.png in Resources */,
+				1FFE597713BF9A21003D5673 /* Seaquations-DifficultyButtonNormalSelected@2x.png in Resources */,
+				1FFE597813BF9A21003D5673 /* Seaquations-DifficultyButtonNormalUnselected@2x.png in Resources */,
+				1FFE597913BF9A21003D5673 /* Seaquations-goVertexButton@2x.png in Resources */,
+				1FFE597A13BF9A21003D5673 /* Seaquations-LeftCloud@2x.png in Resources */,
+				1FFE597B13BF9A21003D5673 /* Seaquations-MenuBubbleButton@2x.png in Resources */,
+				1FFE597C13BF9A21003D5673 /* Seaquations-NewGameButtonEasy@2x.png in Resources */,
+				1FFE597D13BF9A21003D5673 /* Seaquations-NewGameButtonNormal@2x.png in Resources */,
+				1FFE597E13BF9A21003D5673 /* Seaquations-PowerUpScore@2x.png in Resources */,
+				1FFE597F13BF9A21003D5673 /* Seaquations-PowerUpTiles@2x.png in Resources */,
+				1FFE598013BF9A21003D5673 /* Seaquations-PowerUpTime@2x.png in Resources */,
+				1FFE598113BF9A21003D5673 /* Seaquations-RightCloud@2x.png in Resources */,
+				1FFE598413BF9A21003D5673 /* Seaquations-SymbolBubble@2x.png in Resources */,
+				1FFE598513BF9A21003D5673 /* Seaquations-SymbolBubbleSelected@2x.png in Resources */,
+				1FFE598613BF9A21003D5673 /* Seaquations-TreasureChest@2x.png in Resources */,
+				1FFE59A313BF9A33003D5673 /* Seaquations-AlertBorderHD.png in Resources */,
+				1FFE59A413BF9A33003D5673 /* Seaquations-BackgroundCloudHD.png in Resources */,
+				1FFE59A613BF9A33003D5673 /* Seaquations-BackgroundHD.png in Resources */,
+				1FFE59A713BF9A33003D5673 /* Seaquations-BoardHD.png in Resources */,
+				1FFE59A813BF9A33003D5673 /* Seaquations-BoardTabbedHD.png in Resources */,
+				1FFE59A913BF9A33003D5673 /* Seaquations-BoardTabLeftSelectedHD.png in Resources */,
+				1FFE59AA13BF9A33003D5673 /* Seaquations-BoardTabLeftUnselectedHD.png in Resources */,
+				1FFE59AB13BF9A33003D5673 /* Seaquations-BoardTabRightSelectedHD.png in Resources */,
+				1FFE59AC13BF9A33003D5673 /* Seaquations-BoardTabRightUnselectedHD.png in Resources */,
+				1FFE59AD13BF9A33003D5673 /* Seaquations-DifficultyButtonEasySelectedHD.png in Resources */,
+				1FFE59AE13BF9A33003D5673 /* Seaquations-DifficultyButtonEasyUnselectedHD.png in Resources */,
+				1FFE59AF13BF9A33003D5673 /* Seaquations-DifficultyButtonNormalSelectedHD.png in Resources */,
+				1FFE59B013BF9A33003D5673 /* Seaquations-DifficultyButtonNormalUnselectedHD.png in Resources */,
+				1FFE59B113BF9A33003D5673 /* Seaquations-goVertexButtonHD.png in Resources */,
+				1FFE59B213BF9A33003D5673 /* Seaquations-LeftCloudHD.png in Resources */,
+				1FFE59B313BF9A33003D5673 /* Seaquations-MenuBubbleButtonHD.png in Resources */,
+				1FFE59B413BF9A33003D5673 /* Seaquations-NewGameButtonEasyHD.png in Resources */,
+				1FFE59B513BF9A33003D5673 /* Seaquations-NewGameButtonNormalHD.png in Resources */,
+				1FFE59B613BF9A33003D5673 /* Seaquations-PowerUpScoreHD.png in Resources */,
+				1FFE59B713BF9A33003D5673 /* Seaquations-PowerUpTilesHD.png in Resources */,
+				1FFE59B813BF9A33003D5673 /* Seaquations-PowerUpTimeHD.png in Resources */,
+				1FFE59B913BF9A33003D5673 /* Seaquations-RightCloudHD.png in Resources */,
+				1FFE59BC13BF9A33003D5673 /* Seaquations-SymbolBubbleHD.png in Resources */,
+				1FFE59BD13BF9A33003D5673 /* Seaquations-SymbolBubbleSelectedHD.png in Resources */,
+				1FFE59BE13BF9A33003D5673 /* Seaquations-TreasureChestHD.png in Resources */,
+				1FFE59C013BF9ADB003D5673 /* goVertexLogoHD.png in Resources */,
+				1FFE59C313BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingLeftHD.png in Resources */,
+				1FFE59C413BF9B6E003D5673 /* Seaquations-BackgroundFishTravelingRightHD.png in Resources */,
+				1FFE59C713BF9B88003D5673 /* Seaquations-BackgroundFishTravelingLeft@2x.png in Resources */,
+				1FFE59C813BF9B88003D5673 /* Seaquations-BackgroundFishTravelingRight@2x.png in Resources */,
+				1FFE59CB13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingLeft.png in Resources */,
+				1FFE59CC13BF9B9F003D5673 /* Seaquations-BackgroundFishTravelingRight.png in Resources */,
+				1FFE59D313BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn1HD.png in Resources */,
+				1FFE59D413BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn2HD.png in Resources */,
+				1FFE59D513BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn3HD.png in Resources */,
+				1FFE59D613BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn4HD.png in Resources */,
+				1FFE59D713BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn5HD.png in Resources */,
+				1FFE59D813BF9CF2003D5673 /* Seaquations-TransitionBubblesColumn6HD.png in Resources */,
+				1FFE59DF13BF9D05003D5673 /* Seaquations-TransitionBubblesColumn1@2x.png in Resources */,
+				1FFE59E013BF9D05003D5673 /* Seaquations-TransitionBubblesColumn2@2x.png in Resources */,
+				1FFE59E113BF9D05003D5673 /* Seaquations-TransitionBubblesColumn3@2x.png in Resources */,
+				1FFE59E213BF9D05003D5673 /* Seaquations-TransitionBubblesColumn4@2x.png in Resources */,
+				1FFE59E313BF9D05003D5673 /* Seaquations-TransitionBubblesColumn5@2x.png in Resources */,
+				1FFE59E413BF9D05003D5673 /* Seaquations-TransitionBubblesColumn6@2x.png in Resources */,
+				1FFE59EB13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn1.png in Resources */,
+				1FFE59EC13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn2.png in Resources */,
+				1FFE59ED13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn3.png in Resources */,
+				1FFE59EE13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn4.png in Resources */,
+				1FFE59EF13BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn5.png in Resources */,
+				1FFE59F013BF9D1A003D5673 /* Seaquations-TransitionBubblesColumn6.png in Resources */,
+				1FFE59F213BF9D3B003D5673 /* Seaquations-BoardTextFieldInsetHD.png in Resources */,
+				1FFE59F413BF9D4F003D5673 /* Seaquations-BoardTextFieldInset@2x.png in Resources */,
+				1FFE59F613BF9D5D003D5673 /* Seaquations-BoardTextFieldInset.png in Resources */,
+				1FFE59F913BFD6C5003D5673 /* Seaquations-SoundOffButton.png in Resources */,
+				1FFE59FA13BFD6C5003D5673 /* Seaquations-SoundOnButton.png in Resources */,
+				1FFE59FD13BFD6E9003D5673 /* Seaquations-SoundOff@2x.png in Resources */,
+				1FFE59FE13BFD6E9003D5673 /* Seaquations-SoundOn@2x.png in Resources */,
+				1FFE5A0113BFD705003D5673 /* Seaquations-SoundOffHD.png in Resources */,
+				1FFE5A0213BFD705003D5673 /* Seaquations-SoundOnHD.png in Resources */,
+				1FFE5A0413BFD87B003D5673 /* goVertexLogo.png in Resources */,
+				1FFE5A0613BFD885003D5673 /* goVertexLogo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FFE571313BF85B8003D5673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFE572913BF85B8003D5673 /* main.m in Sources */,
+				1FFE572C13BF85B8003D5673 /* seaquationsAppDelegate.m in Sources */,
+				1FFE573013BF85B8003D5673 /* seaquationsAppDelegate_iPhone.m in Sources */,
+				1FFE573713BF85B8003D5673 /* seaquationsAppDelegate_iPad.m in Sources */,
+				1FFE582513BF88D0003D5673 /* ChimpKit.m in Sources */,
+				1FFE582613BF88D0003D5673 /* SubscribeAlertView.m in Sources */,
+				1FFE584013BF88D0003D5673 /* NSObject+SBJSON.m in Sources */,
+				1FFE584113BF88D0003D5673 /* NSString+SBJSON.m in Sources */,
+				1FFE584213BF88D0003D5673 /* SBJsonBase.m in Sources */,
+				1FFE584313BF88D0003D5673 /* SBJsonParser.m in Sources */,
+				1FFE584413BF88D0003D5673 /* SBJsonStreamWriter.m in Sources */,
+				1FFE584513BF88D0003D5673 /* SBJsonWriter.m in Sources */,
+				1FFE58D713BF89D1003D5673 /* seaquationsGameState.m in Sources */,
+				1FFE58DA13BF89EF003D5673 /* seaquationsTile.m in Sources */,
+				1FFE58DD13BF8A10003D5673 /* GVDecimalNumber.m in Sources */,
+				1FFE58E013BF8A1D003D5673 /* GVOperator.m in Sources */,
+				1FFE5A0D13BFDBFE003D5673 /* LocalyticsSession.m in Sources */,
+				1FFE5A0E13BFDBFE003D5673 /* UploaderThread.m in Sources */,
+				1FF0D13B144CB0DC00EBBF04 /* SeaquationsGameViewController.m in Sources */,
+				1FF0D13E144CB0F800EBBF04 /* SeaquationsMenuViewController.m in Sources */,
+				1FF0D141144CB10D00EBBF04 /* SeaquationsBackgroundViewController.m in Sources */,
+				1FF0D144144CB12700EBBF04 /* SeaquationsTransitionViewController.m in Sources */,
+				1FF0D147144CB14100EBBF04 /* SeaquationsGoVertexViewController.m in Sources */,
+				1FF0D14B144CC3DE00EBBF04 /* SeaquationsMenuView_MainMenu.m in Sources */,
+				1FF0D14E144CC3FC00EBBF04 /* SeaquationsMenuView_MainMenuInProgressGame.m in Sources */,
+				1FF0D151144CC41700EBBF04 /* SeaquationsMenuView_HighScoresMenu.m in Sources */,
+				1FF0D15A144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.m in Sources */,
+				1FF0D15D144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.m in Sources */,
+				1FF0D160144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FFE572413BF85B8003D5673 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFE572513BF85B8003D5673 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FFE573113BF85B8003D5673 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFE573213BF85B8003D5673 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1FFE573813BF85B8003D5673 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFE573913BF85B8003D5673 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FFE573B13BF85B8003D5673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FFE573C13BF85B8003D5673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: goVertex LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: goVertex LLC";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "0F7FBC2F-D00E-4B91-919A-96A4C0E3D3F5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0F7FBC2F-D00E-4B91-919A-96A4C0E3D3F5";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1FFE573E13BF85B8003D5673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "seaquations/seaquations-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "seaquations/seaquations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FFE573F13BF85B8003D5673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "seaquations/seaquations-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "seaquations/seaquations-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FFE571113BF85B7003D5673 /* Build configuration list for PBXProject "seaquations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFE573B13BF85B8003D5673 /* Debug */,
+				1FFE573C13BF85B8003D5673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFE573D13BF85B8003D5673 /* Build configuration list for PBXNativeTarget "seaquations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFE573E13BF85B8003D5673 /* Debug */,
+				1FFE573F13BF85B8003D5673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FFE570E13BF85B7003D5673 /* Project object */;
+}

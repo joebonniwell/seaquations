@@ -1,0 +1,772 @@
+//
+// Prefix header for all source files of the 'seaquations' target in the 'seaquations' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#pragma mark -
+#pragma mark Others...
+
+#define kHowToPlayScrollView 3
+
+
+// Localytics - Release
+//#define LocalyticsIdentifier @"173a854c12034e94009cb75-d0b2977c-a4ff-11e0-01df-007f58cb3154"
+// Localytics - Debug
+#define LocalyticsIdentifier @"7f39854431bf8cb1cf0c7db-a27a57ac-f9bc-11e0-8dc9-007bc6310ec9"
+
+// Loss Lines
+#define kLossLineCenter_iPhone 72.0f
+#define kLossLineCenter_iPad 150.0f
+// Warning Band Heights
+#define kWarningBandHeight_iPhone 35.0f
+#define kWarningBandHeight_iPad 100.0f
+// Symbol Generation Weightings
+#define kComparatorRandomCutoff 15
+#define kOperatorRandomCutoff 40
+
+#pragma mark -
+#pragma mark PowerUps
+// Power Up Constants
+#define kNumberOfScorePowerUpsPerTile 1
+#define kSlowDurationPerTile 8
+#define kInitialPowerUpScoreThreshold 10
+#define kPowerUpScoreThresholdIncrease 10
+
+#pragma mark -
+#pragma mark Animation Timings & Speeds
+// Warning Pulse Time
+#define kWarningPulseTime 1.35f
+#define kTransitionAnimationDuration 0.8f
+#define kGameLossAnimationDuration 2.0f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Game Timings & Speeds
+// Fall Rate
+#define kFallRate_iPhone 60.0f
+#define kFallRate_iPad 128.0f
+
+#define kStartingSpeed 11.38f
+#define kMaximumSpeed 256.0f
+
+#define kMinimumSpeed_iPhone 5.33
+#define kMinimumSpeed_iPad 11.38    // Pixels / Second
+
+#define kAccelerationRate_iPhone 0.025f // Pixels / Second / Second
+#define kAccelerationRate_iPad 0.025f  // Pixels / Second / Second
+
+#define kStartingRiseTime 90.0f
+#define kSpeedFactor 0.143f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Tile Measurements & Locations
+// Tile Size
+#define kTileSize_iPhone 44.0f
+#define kTileSize_iPad 100.0f
+// Horizontal Offset
+#define kTileHorizontalOffset_iPhone 35.0f
+#define kTileHorizontalOffset_iPad 84.0f
+// Horizontal Seperation Distance
+#define kTileHorizontalSeperationDistance_iPhone 50.0f
+#define kTileHorizontalSeperationDistance_iPad 120.0f
+// New Row Threshold
+#define kNewRowThreshold_iPhone 368.0f
+#define kNewRowThreshold_iPad 820.0f
+// New Row Center
+#define kNewRowCenter_iPhone 418.0f
+#define kNewRowCenter_iPad 940.0f
+
+#define kPostGameTextLabelsX_iPad 134.0f
+#define kPostGameValueLabelsX_iPad 500.0f
+
+
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Menu States
+// Menu States
+#define kMainMenuState 1
+#define kMainMenuInProgressGameState 2
+#define kPostGameMenuState 3
+#define kPostGameMenuNewHighScoreState 4
+#define kHighScoresMenuState 5
+#define kHowToPlayMenuState 6
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Menu Transitions
+// Menu Transitions
+#define kNoTransition 0
+#define kMainMenuFromLoadTransition 1
+#define kMainMenuInProgressGameFromLoadTransition 2
+#define kMainMenuFromGameTransition 3
+#define kMainMenuInProgressGameFromGameTransition 4
+#define kMainMenuFromMenuTransition 5
+#define kMainMenuInProgressGameFromMenuTransition 6
+#define kPostGameMenuFromGameTransition 7
+#define kPostGameNewHighScoreMenuFromGameTransition 8
+#define kHighScoreMenuFromMenuTransition 9
+#define kHowToPlayMenuFromMenuTransition 10
+#define kGameFromMainMenuTransition 11
+
+// Transitions
+#define kLaunchTransition 1
+#define kMainMenuToGameTransition 2
+#define kGameToMainMenuTransition 3
+#define kMainMenuToSubmenuTransition 4
+#define kSubmenuToMainMenuTransition 5
+
+#define kRowGenerationPercentage_OneEquals 90
+#define kRowGenerationPercentage_NoEquals 10
+
+#define kRowGenerationPercentage_OneOperator 80
+#define kRowGenerationPercentage_TwoOperators 10
+#define kRowGenerationPercentage_NoOperators 10
+
+#define kTwoOperatorGenerationValue 70
+
+#define kDistributionFactorDigit0 5
+#define kDistributionFactorDigit1 20
+#define kDistributionFactorDigit2 30
+#define kDistributionFactorDigit3 40
+#define kDistributionFactorDigit4 50
+#define kDistributionFactorDigit5 60
+#define kDistributionFactorDigit6 70
+#define kDistributionFactorDigit7 80
+#define kDistributionFactorDigit8 90
+#define kDistributionFactorDigit9 100
+
+#define kDistributionFactorOperatorAddition 40
+#define kDistributionFactorOperatorSubtraction 65
+#define kDistributionFactorOperatorMultiplication 85
+#define kDistributionFactorOperatorDivision 100
+
+
+
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Background ImageView Values
+// Speeds
+#define kFishImageViewSpeed 12.0f
+#define kCloudImageViewSpeed 8.0f
+// Background Fish ImageView Positions
+#define kFishImageView_CenterMinX_iPhone 50
+#define kFishImageView_CenterMaxX_iPhone 370
+#define kFishImageView_CenterMinY_iPhone 85
+#define kFishImageView_CenterMaxY_iPhone 390
+#define kFishImageView_CenterMinX_iPad 200
+#define kFishImageView_CenterMaxX_iPad 900
+#define kFishImageView_CenterMinY_iPad 200
+#define kFishImageView_CenterMaxY_iPad 600
+// Background Cloud ImageView Positions
+#define kCloudImageView_CenterMinX_iPhone 28
+#define kCloudImageView_CenterMaxX_iPhone 348
+#define kCloudImageView_CenterMinY_iPhone 5
+#define kCloudImageView_CenterMaxY_iPhone 25
+#define kCloudImageView_CenterMinX_iPad 50
+#define kCloudImageView_CenterMaxX_iPad 818
+#define kCloudImageView_CenterMinY_iPad 10
+#define kCloudImageView_CenterMaxY_iPad 60
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Foreground ImageView Values
+// Shared Cloud Values
+#define kForegroundCloudY_iPhone 25
+#define kForegroundCloudY_iPad 50
+// Left Cloud Values
+#define kForegroundLeftCloud_OnscreenX_iPhone 80
+#define kForegroundLeftCloud_OffscreenX_iPhone 80
+#define kForegroundLeftCloud_OnscreenX_iPad 192
+#define kForegroundLeftCloud_OffscreenX_iPad 192
+// Right Cloud Values
+#define kForegroundRightCloud_OnscreenX_iPhone 240
+#define kForegroundRightCloud_OffscreenX_iPhone 400
+#define kForegroundRightCloud_OnscreenX_iPad 576
+#define kForegroundRightCloud_OffscreenX_iPad 960
+
+
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark Symbol Definitions
+// Symbols
+#define kDigit0 0
+#define kDigit1 1
+#define kDigit2 2
+#define kDigit3 3
+#define kDigit4 4
+#define kDigit5 5
+#define kDigit6 6
+#define kDigit7 7
+#define kDigit8 8
+#define kDigit9 9
+#define kComparatorEquals 10
+#define kOperatorAddition 11
+#define kOperatorSubtraction 12
+#define kOperatorMultiplication 13
+#define kOperatorDivision 14
+#define kOperatorDecimalPoint 15
+#define kPowerUpTime 16
+#define kPowerUpScore 17
+#define kPowerUpTiles 18
+
+#pragma mark -
+#pragma mark MainMenu_iPhone Positions & Dimensions
+// New Game Button
+#define kGVMenuView_MainMenu_NewGameButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenu_NewGameButtonY_iPhone 130.0f
+#define kGVMenuView_MainMenu_NewGameButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenu_NewGameButtonHeight_iPhone 57.0f
+// Easy Difficulty Button
+#define kGVMenuView_MainMenu_DifficultyEasyButtonX_iPhone 122.0f
+#define kGVMenuView_MainMenu_DifficultyEasyButtonY_iPhone 187.0f
+#define kGVMenuView_MainMenu_DifficultyEasyButtonWidth_iPhone 73.0f
+#define kGVMenuView_MainMenu_DifficultyEasyButtonHeight_iPhone 33.0f
+// Normal Difficulty Button
+#define kGVMenuView_MainMenu_DifficultyNormalButtonX_iPhone 195.0f
+#define kGVMenuView_MainMenu_DifficultyNormalButtonY_iPhone 187.0f
+#define kGVMenuView_MainMenu_DifficultyNormalButtonWidth_iPhone 65.0f
+#define kGVMenuView_MainMenu_DifficultyNormalButtonHeight_iPhone 33.0f
+// High Scores Button
+#define kGVMenuView_MainMenu_HighScoresButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenu_HighScoresButtonY_iPhone 230.0f
+#define kGVMenuView_MainMenu_HighScoresButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenu_HighScoresButtonHeight_iPhone 60.0f
+// How to Play Button
+#define kGVMenuView_MainMenu_HowtoPlayButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenu_HowtoPlayButtonY_iPhone 300.0f
+#define kGVMenuView_MainMenu_HowtoPlayButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenu_HowtoPlayButtonHeight_iPhone 60.0f
+// goVertex Button
+#define kGVMenuView_MainMenu_goVertexButtonX_iPhone 40.0f
+#define kGVMenuView_MainMenu_goVertexButtonY_iPhone 370.0f
+#define kGVMenuView_MainMenu_goVertexButtonWidth_iPhone 110.0f
+#define kGVMenuView_MainMenu_goVertexButtonHeight_iPhone 60.0f
+// Mute Button
+#define kGVMenuView_MainMenu_MuteButtonX_iPhone 170.0f
+#define kGVMenuView_MainMenu_MuteButtonY_iPhone 370.0f
+#define kGVMenuView_MainMenu_MuteButtonWidth_iPhone 110.0f
+#define kGVMenuView_MainMenu_MuteButtonHeight_iPhone 60.0f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark MainMenuInProgressGame_iPhone Positions & Dimensions
+// Resume Game Button
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonY_iPhone 60.0f
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonHeight_iPhone 60.0f
+// New Game Button
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonY_iPhone 130.0f
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonHeight_iPhone 57.0f
+// Easy Difficulty Button
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonX_iPhone 122.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonY_iPhone 187.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonWidth_iPhone 73.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonHeight_iPhone 33.0f
+// Normal Difficulty Button
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonX_iPhone 195.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonY_iPhone 187.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonWidth_iPhone 65.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonHeight_iPhone 33.0f
+// High Scores Button
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonY_iPhone 230.0f
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonHeight_iPhone 60.0f
+// How to Play Button
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonX_iPhone 60.0f
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonY_iPhone 300.0f
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonWidth_iPhone 200.0f
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonHeight_iPhone 60.0f
+// goVertex Button
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonX_iPhone 40.0f
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonY_iPhone 370.0f
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonWidth_iPhone 110.0f
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonHeight_iPhone 60.0f
+// Mute Button
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonX_iPhone 170.0f
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonY_iPhone 370.0f
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonWidth_iPhone 110.0f
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonHeight_iPhone 60.0f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark HighScoresMenu_iPhone Positions & Dimensions
+// Board ImageView
+#define kGVMenuView_HighScoresMenu_BoardImageViewX_iPhone 10.0f
+#define kGVMenuView_HighScoresMenu_BoardImageViewY_iPhone 60.0f
+#define kGVMenuView_HighScoresMenu_BoardImageViewWidth_iPhone 300.0f
+#define kGVMenuView_HighScoresMenu_BoardImageViewHeight_iPhone 219.0f
+// High Scores And Stats Title Label
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelX_iPhone 10.0f
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelY_iPhone 70.0f
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelWidth_iPhone 300.0f
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelHeight_iPhone 30.0f
+// High Scores TableView
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewX_iPhone 40.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewY_iPhone 110.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewWidth_iPhone 240.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewHeight_iPhone 150.0f
+// Total Games Played Text Label
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelX_iPhone 40.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelY_iPhone 115.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelWidth_iPhone 140.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelHeight_iPhone 30.0f
+// Total Games Played Value Label
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelX_iPhone 190.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelY_iPhone 115.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelWidth_iPhone 80.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelHeight_iPhone 30.0f
+// Total Equations Created Text Label
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelX_iPhone 40.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelY_iPhone 160.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelWidth_iPhone 140.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelHeight_iPhone 30.0f
+// Total Equations Created Value Label
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelX_iPhone 190.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelY_iPhone 160.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelWidth_iPhone 80.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelHeight_iPhone 30.0f
+// Total Time Played Text Label
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelX_iPhone 40.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelY_iPhone 205.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelWidth_iPhone 140.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelHeight_iPhone 30.0f
+// Total Time Played Value Label
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelX_iPhone 190.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelY_iPhone 205.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelWidth_iPhone 80.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelHeight_iPhone 30.0f
+// HighScores Tab Button
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonX_iPhone 10.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonY_iPhone 279.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonWidth_iPhone 150.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonHeight_iPhone 61.0f
+// GameStats Tab Button
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonX_iPhone 160.0f
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonY_iPhone 279.0f
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonWidth_iPhone 150.0f
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonHeight_iPhone 61.0f
+// Main Menu Button
+#define kGVMenuView_HighScoresMenu_MainMenuButtonX_iPhone 60.0f
+#define kGVMenuView_HighScoresMenu_MainMenuButtonY_iPhone 395.0f
+#define kGVMenuView_HighScoresMenu_MainMenuButtonWidth_iPhone 200.0f
+#define kGVMenuView_HighScoresMenu_MainMenuButtonHeight_iPhone 60.0f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark HowToPlayMenu_iPhone Positions & Dimensions
+// BoardImageView
+
+// ScrollView
+
+// Page1TitleLabel
+
+// Page1BodyLabel
+
+// Main Menu Button
+#define kHowToPlayMenu_MainMenuButtonX_iPhone 60.0f
+#define kHowToPlayMenu_MainMenuButtonY_iPhone 395.0f
+#define kHowToPlayMenu_MainMenuButtonWidth_iPhone 200.0f
+#define kHowToPlayMenu_MainMenuButtonHeight_iPhone 60.0f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark PostGameMenu_iPhone Positions & Dimensions
+// Board
+#define kPostGameMenu_BoardX_iPhone 10.0f
+#define kPostGameMenu_BoardY_iPhone 50.0f
+#define kPostGameMenu_BoardWidth_iPhone 300.0f
+#define kPostGameMenu_BoardHeight_iPhone 280.0f
+// Good Job Label
+#define kPostGameMenu_GoodJobLabelX_iPhone 10.0f
+#define kPostGameMenu_GoodJobLabelY_iPhone 80.0f
+#define kPostGameMenu_GoodJobLabelWidth_iPhone 300.0f
+#define kPostGameMenu_GoodJobLabelHeight_iPhone 30.0f
+// Game Score Text Label
+#define kPostGameMenu_GameScoreTextLabelX_iPhone 45.0f
+#define kPostGameMenu_GameScoreTextLabelY_iPhone 120.0f
+#define kPostGameMenu_GameScoreTextLabelWidth_iPhone 180.0f
+#define kPostGameMenu_GameScoreTextLabelHeight_iPhone 40.0f
+// Game Score Value Label
+#define kPostGameMenu_GameScoreValueLabelX_iPhone 230.0f
+#define kPostGameMenu_GameScoreValueLabelY_iPhone 120.0f
+#define kPostGameMenu_GameScoreValueLabelWidth_iPhone 40.0f
+#define kPostGameMenu_GameScoreValueLabelHeight_iPhone 40.0f
+// Game Equations Text Label
+#define kPostGameMenu_GameEquationsTextLabelX_iPhone 45.0f
+#define kPostGameMenu_GameEquationsTextLabelY_iPhone 180.0f
+#define kPostGameMenu_GameEquationsTextLabelWidth_iPhone 180.0f
+#define kPostGameMenu_GameEquationsTextLabelHeight_iPhone 40.0f
+// Game Equations Value Label
+#define kPostGameMenu_GameEquationsValueLabelX_iPhone 230.0f
+#define kPostGameMenu_GameEquationsValueLabelY_iPhone 180.0f
+#define kPostGameMenu_GameEquationsValueLabelWidth_iPhone 40.0f
+#define kPostGameMenu_GameEquationsValueLabelHeight_iPhone 40.0f
+// Game Time Text Label
+#define kPostGameMenu_GameTimeTextLabelX_iPhone 45.0f
+#define kPostGameMenu_GameTimeTextLabelY_iPhone 240.0f
+#define kPostGameMenu_GameTimeTextLabelWidth_iPhone 200.0f
+#define kPostGameMenu_GameTimeTextLabelHeight_iPhone 40.0f
+// Game Time Value Label
+#define kPostGameMenu_GameTimeValueLabelX_iPhone 230.0f
+#define kPostGameMenu_GameTimeValueLabelY_iPhone 240.0f
+#define kPostGameMenu_GameTimeValueLabelWidth_iPhone 40.0f
+#define kPostGameMenu_GameTimeValueLabelHeight_iPhone 40.0f
+// Play Again Button
+#define kPostGameMenu_PlayAgainButtonX_iPhone 60.0f
+#define kPostGameMenu_PlayAgainButtonY_iPhone 325.0f
+#define kPostGameMenu_PlayAgainButtonWidth_iPhone 200.0f
+#define kPostGameMenu_PlayAgainButtonHeight_iPhone 60.0f
+// Main Menu Button
+#define kPostGameMenu_MainMenuButtonX_iPhone 60.0f
+#define kPostGameMenu_MainMenuButtonY_iPhone 395.0f
+#define kPostGameMenu_MainMenuButtonWidth_iPhone 200.0f
+#define kPostGameMenu_MainMenuButtonHeight_iPhone 60.0f
+//---------------------------------------------------------------------------------------------
+#pragma mark -
+#pragma mark PostGameMenuNewHighScore_iPhone Positions & Dimensions
+// Board
+#define kPostGameNewHighScoreMenu_BoardX_iPhone 10.0f
+#define kPostGameNewHighScoreMenu_BoardY_iPhone 50.0f
+#define kPostGameNewHighScoreMenu_BoardWidth_iPhone 300.0f
+#define kPostGameNewHighScoreMenu_BoardHeight_iPhone 280.0f
+// Congratulations Label
+#define kPostGameNewHighScoreMenu_CongratulationsLabelX_iPhone 10.0f
+#define kPostGameNewHighScoreMenu_CongratulationsLabelY_iPhone 80.0f
+#define kPostGameNewHighScoreMenu_CongratulationsLabelWidth_iPhone 300.0f
+#define kPostGameNewHighScoreMenu_CongratulationsLabelHeight_iPhone 30.0f
+// High Score Place Label
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelX_iPhone 45.0f
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelY_iPhone 120.0f
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelWidth_iPhone 25.0f
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelHeight_iPhone 40.0f
+// High Score Name TextField
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldX_iPhone 70.0f
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldY_iPhone 120.0f
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldWidth_iPhone 160.0f
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldHeight_iPhone 40.0f
+// High Score Value Label
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelX_iPhone 230.0f
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelY_iPhone 120.0f
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelWidth_iPhone 40.0f
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelHeight_iPhone 40.0f
+// Game Equations Text Label
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelX_iPhone 45.0f
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelY_iPhone 180.0f
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelWidth_iPhone 180.0f
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelHeight_iPhone 40.0f
+// Game Equations Value Label
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelX_iPhone 230.0f
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelY_iPhone 180.0f
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelWidth_iPhone 40.0f
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelHeight_iPhone 40.0f
+// Game Time Text Label
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelX_iPhone 45.0f
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelY_iPhone 230.0f
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelWidth_iPhone 180.0f
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelHeight_iPhone 40.0f
+// Game Time Value Label
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelX_iPhone 230.0f
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelY_iPhone 230.0f
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelWidth_iPhone 40.0f
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelHeight_iPhone 40.0f
+// Play Again Button
+#define kPostGameNewHighScoreMenu_PlayAgainButtonX_iPhone 60.0f
+#define kPostGameNewHighScoreMenu_PlayAgainButtonY_iPhone 325.0f
+#define kPostGameNewHighScoreMenu_PlayAgainButtonWidth_iPhone 200.0f
+#define kPostGameNewHighScoreMenu_PlayAgainButtonHeight_iPhone 60.0f
+// Main Menu Button
+#define kPostGameNewHighScoreMenu_MainMenuButtonX_iPhone 60.0f
+#define kPostGameNewHighScoreMenu_MainMenuButtonY_iPhone 395.0f
+#define kPostGameNewHighScoreMenu_MainMenuButtonWidth_iPhone 200.0f
+#define kPostGameNewHighScoreMenu_MainMenuButtonHeight_iPhone 60.0f
+
+//-------------------------------------------------------------------------------------------------
+//------------------------------------------iPad---------------------------------------------------
+//-------------------------------------------------------------------------------------------------
+
+#pragma mark -
+#pragma mark MainMenu_iPad Positions & Dimensions
+// New Game Button
+#define kGVMenuView_MainMenu_NewGameButtonX_iPad 184.0f
+#define kGVMenuView_MainMenu_NewGameButtonY_iPad 260.0f
+#define kGVMenuView_MainMenu_NewGameButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenu_NewGameButtonHeight_iPad 115.0f
+// Easy Difficulty Button
+#define kGVMenuView_MainMenu_DifficultyEasyButtonX_iPad 309.0f
+#define kGVMenuView_MainMenu_DifficultyEasyButtonY_iPad 375.0f
+#define kGVMenuView_MainMenu_DifficultyEasyButtonWidth_iPad 145.0f
+#define kGVMenuView_MainMenu_DifficultyEasyButtonHeight_iPad 65.0f
+// Normal Difficulty Button
+#define kGVMenuView_MainMenu_DifficultyNormalButtonX_iPad 454.0f
+#define kGVMenuView_MainMenu_DifficultyNormalButtonY_iPad 375.0f
+#define kGVMenuView_MainMenu_DifficultyNormalButtonWidth_iPad 130.0f
+#define kGVMenuView_MainMenu_DifficultyNormalButtonHeight_iPad 65.0f
+// High Scores Button
+#define kGVMenuView_MainMenu_HighScoresButtonX_iPad 184.0f
+#define kGVMenuView_MainMenu_HighScoresButtonY_iPad 480.0f
+#define kGVMenuView_MainMenu_HighScoresButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenu_HighScoresButtonHeight_iPad 120.0f
+// How to Play Button
+#define kGVMenuView_MainMenu_HowtoPlayButtonX_iPad 184.0f
+#define kGVMenuView_MainMenu_HowtoPlayButtonY_iPad 640.0f
+#define kGVMenuView_MainMenu_HowtoPlayButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenu_HowtoPlayButtonHeight_iPad 120.0f
+// goVertex Button
+#define kGVMenuView_MainMenu_goVertexButtonX_iPad 144.0f
+#define kGVMenuView_MainMenu_goVertexButtonY_iPad 800.0f
+#define kGVMenuView_MainMenu_goVertexButtonWidth_iPad 220.0f
+#define kGVMenuView_MainMenu_goVertexButtonHeight_iPad 120.0f
+// Mute Button
+#define kGVMenuView_MainMenu_MuteButtonX_iPad 404.0f
+#define kGVMenuView_MainMenu_MuteButtonY_iPad 800.0f
+#define kGVMenuView_MainMenu_MuteButtonWidth_iPad 220.0f
+#define kGVMenuView_MainMenu_MuteButtonHeight_iPad 120.0f
+
+#pragma mark -
+#pragma mark MainMenuInProgressGame_iPad Positions & Dimensions
+// Resume Game Button
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonX_iPad 184.0f
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonY_iPad 120.0f
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenuInProgressGame_ResumeGameButtonHeight_iPad 120.0f
+// New Game Button
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonX_iPad 184.0f
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonY_iPad 260.0f
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenuInProgressGame_NewGameButtonHeight_iPad 115.0f
+// Easy Difficulty Button
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonX_iPad 309.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonY_iPad 375.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonWidth_iPad 145.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyEasyButtonHeight_iPad 65.0f
+// Normal Difficulty Button
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonX_iPad 454.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonY_iPad 375.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonWidth_iPad 130.0f
+#define kGVMenuView_MainMenuInProgressGame_DifficultyNormalButtonHeight_iPad 65.0f
+// High Scores Button
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonX_iPad 184.0f
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonY_iPad 480.0f
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenuInProgressGame_HighScoresButtonHeight_iPad 120.0f
+// How to Play Button
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonX_iPad 184.0f
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonY_iPad 640.0f
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonWidth_iPad 400.0f
+#define kGVMenuView_MainMenuInProgressGame_HowtoPlayButtonHeight_iPad 120.0f
+// goVertex Button
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonX_iPad 144.0f
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonY_iPad 800.0f
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonWidth_iPad 220.0f
+#define kGVMenuView_MainMenuInProgressGame_goVertexButtonHeight_iPad 120.0f
+// Mute Button
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonX_iPad 404.0f
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonY_iPad 800.0f
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonWidth_iPad 220.0f
+#define kGVMenuView_MainMenuInProgressGame_MuteButtonHeight_iPad 120.0f
+
+#pragma mark -
+#pragma mark HighScoresMenu_iPad Positions & Dimensions
+// Board ImageView
+#define kGVMenuView_HighScoresMenu_BoardImageViewX_iPad 84.0f
+#define kGVMenuView_HighScoresMenu_BoardImageViewY_iPad 160.0f
+#define kGVMenuView_HighScoresMenu_BoardImageViewWidth_iPad 600.0f
+#define kGVMenuView_HighScoresMenu_BoardImageViewHeight_iPad 438.0f
+// High Scores And Stats Title Label
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelX_iPad 150.0f
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelY_iPad 180.0f
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelWidth_iPad 448.0f
+#define kGVMenuView_HighScoresMenu_HighScoresAndStatsTitleLabelHeight_iPad 60.0f
+// High Scores TableView
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewX_iPad 150.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewY_iPad 260.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewWidth_iPad 448.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTableViewHeight_iPad 300.0f
+// Total Games Played Text Label
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelX_iPad 150.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelY_iPad 280.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelWidth_iPad 280.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedTextLabelHeight_iPad 60.0f
+// Total Games Played Value Label
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelX_iPad 398.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelY_iPad 280.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelWidth_iPad 160.0f
+#define kGVMenuView_HighScoresMenu_TotalGamesPlayedValueLabelHeight_iPad 60.0f
+// Total Equations Created Text Label
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelX_iPad 150.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelY_iPad 380.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelWidth_iPad 280.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedTextLabelHeight_iPad 60.0f
+// Total Equations Created Value Label
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelX_iPad 398.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelY_iPad 380.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelWidth_iPad 160.0f
+#define kGVMenuView_HighScoresMenu_TotalEquationsCreatedValueLabelHeight_iPad 60.0f
+// Total Time Played Text Label
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelX_iPad 150.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelY_iPad 490.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelWidth_iPad 280.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedTextLabelHeight_iPad 60.0f
+// Total Time Played Value Label
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelX_iPad 398.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelY_iPad 490.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelWidth_iPad 160.0f
+#define kGVMenuView_HighScoresMenu_TotalTimePlayedValueLabelHeight_iPad 60.0f
+// HighScores Tab Button
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonX_iPad 84.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonY_iPad 598.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonWidth_iPad 300.0f
+#define kGVMenuView_HighScoresMenu_HighScoresTabButtonHeight_iPad 122.0f
+// GameStats Tab Button
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonX_iPad 384.0f
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonY_iPad 598.0f
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonWidth_iPad 300.0f
+#define kGVMenuView_HighScoresMenu_GameStatsTabButtonHeight_iPad 122.0f
+// Main Menu Button
+#define kGVMenuView_HighScoresMenu_MainMenuButtonX_iPad 184.0f
+#define kGVMenuView_HighScoresMenu_MainMenuButtonY_iPad 840.0f
+#define kGVMenuView_HighScoresMenu_MainMenuButtonWidth_iPad 400.0f
+#define kGVMenuView_HighScoresMenu_MainMenuButtonHeight_iPad 120.0f
+
+#pragma mark -
+#pragma mark HowToPlayMenu_iPad Positions & Dimensions
+// BoardImageView
+
+// ScrollView
+
+// Page1TitleLabel
+
+// Page1BodyLabel
+
+// Main Menu Button
+#define kHowToPlayMenu_MainMenuButtonX_iPad 184.0f
+#define kHowToPlayMenu_MainMenuButtonY_iPad 840.0f
+#define kHowToPlayMenu_MainMenuButtonWidth_iPad 400.0f
+#define kHowToPlayMenu_MainMenuButtonHeight_iPad 120.0f
+
+#pragma mark -
+#pragma mark PostGameMenu_iPad Positions & Dimensions
+// Board Image View
+#define kPostGameMenu_BoardX_iPad 84.0f
+#define kPostGameMenu_BoardY_iPad 140.0f
+#define kPostGameMenu_BoardWidth_iPad 600.0f
+#define kPostGameMenu_BoardHeight_iPad 560.0f
+// Good Job Label
+#define kPostGameMenu_GoodJobLabelX_iPad 150.0f
+#define kPostGameMenu_GoodJobLabelY_iPad 180.0f
+#define kPostGameMenu_GoodJobLabelWidth_iPad 448.0f
+#define kPostGameMenu_GoodJobLabelHeight_iPad 60.0f
+// Game Score Text Label
+#define kPostGameMenu_GameScoreTextLabelX_iPad 144.0f
+#define kPostGameMenu_GameScoreTextLabelY_iPad 300.0f
+#define kPostGameMenu_GameScoreTextLabelWidth_iPad 400.0f
+#define kPostGameMenu_GameScoreTextLabelHeight_iPad 80.0f
+// Game Score Value Label
+#define kPostGameMenu_GameScoreValueLabelX_iPad 514.0f
+#define kPostGameMenu_GameScoreValueLabelY_iPad 300.0f
+#define kPostGameMenu_GameScoreValueLabelWidth_iPad 100.0f
+#define kPostGameMenu_GameScoreValueLabelHeight_iPad 80.0f
+// Game Equations Text Label
+#define kPostGameMenu_GameEquationsTextLabelX_iPad 144.0f
+#define kPostGameMenu_GameEquationsTextLabelY_iPad 400.0f
+#define kPostGameMenu_GameEquationsTextLabelWidth_iPad 400.0f
+#define kPostGameMenu_GameEquationsTextLabelHeight_iPad 80.0f
+// Game Equations Value Label
+#define kPostGameMenu_GameEquationsValueLabelX_iPad 514.0f
+#define kPostGameMenu_GameEquationsValueLabelY_iPad 400.0f
+#define kPostGameMenu_GameEquationsValueLabelWidth_iPad 100.0f
+#define kPostGameMenu_GameEquationsValueLabelHeight_iPad 80.0f
+// Game Time Text Label
+#define kPostGameMenu_GameTimeTextLabelX_iPad 144.0f
+#define kPostGameMenu_GameTimeTextLabelY_iPad 500.0f
+#define kPostGameMenu_GameTimeTextLabelWidth_iPad 400.0f
+#define kPostGameMenu_GameTimeTextLabelHeight_iPad 80.0f
+// Game Time Value Label
+#define kPostGameMenu_GameTimeValueLabelX_iPad 514.0f
+#define kPostGameMenu_GameTimeValueLabelY_iPad 500.0f
+#define kPostGameMenu_GameTimeValueLabelWidth_iPad 100.0f
+#define kPostGameMenu_GameTimeValueLabelHeight_iPad 80.0f
+
+// Best Equation Text Label
+
+// Best Equation Value Label
+
+
+
+// Play Again Button
+#define kPostGameMenu_PlayAgainButtonX_iPad 184.0f
+#define kPostGameMenu_PlayAgainButtonY_iPad 700.0f
+#define kPostGameMenu_PlayAgainButtonWidth_iPad 400.0f
+#define kPostGameMenu_PlayAgainButtonHeight_iPad 120.0f
+// Main Menu Button
+#define kPostGameMenu_MainMenuButtonX_iPad 184.0f
+#define kPostGameMenu_MainMenuButtonY_iPad 840.0f
+#define kPostGameMenu_MainMenuButtonWidth_iPad 400.0f
+#define kPostGameMenu_MainMenuButtonHeight_iPad 120.0f
+
+
+
+#pragma mark -
+#pragma mark PostGameMenuNewHighScore_iPad Positions & Dimensions
+// Board
+#define kPostGameNewHighScoreMenu_BoardX_iPad 84.0f
+#define kPostGameNewHighScoreMenu_BoardY_iPad 140.0f
+#define kPostGameNewHighScoreMenu_BoardWidth_iPad 600.0f
+#define kPostGameNewHighScoreMenu_BoardHeight_iPad 560.0f
+// Congratulations Label
+#define kPostGameNewHighScoreMenu_CongratulationsLabelX_iPad 150.0f
+#define kPostGameNewHighScoreMenu_CongratulationsLabelY_iPad 180.0f
+#define kPostGameNewHighScoreMenu_CongratulationsLabelWidth_iPad 448.0f
+#define kPostGameNewHighScoreMenu_CongratulationsLabelHeight_iPad 60.0f
+// High Score Place Label
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelX_iPad 144.0f
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelY_iPad 300.0f
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelWidth_iPad 50.0f
+#define kPostGameNewHighScoreMenu_HighScorePlaceLabelHeight_iPad 80.0f
+// High Score Name TextField
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldX_iPad 194.0f
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldY_iPad 300.0f
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldWidth_iPad 320.0f
+#define kPostGameNewHighScoreMenu_HighScoreNameTextFieldHeight_iPad 80.0f
+// High Score Value Label
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelX_iPad 514.0f
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelY_iPad 300.0f
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelWidth_iPad 100.0f
+#define kPostGameNewHighScoreMenu_HighScoreValueLabelHeight_iPad 80.0f
+// Game Equations Text Label
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelX_iPad 144.0f
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelY_iPad 400.0f
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelWidth_iPad 400.0f
+#define kPostGameNewHighScoreMenu_GameEquationsTextLabelHeight_iPad 80.0f
+// Game Equations Value Label
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelX_iPad 514.0f
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelY_iPad 400.0f
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelWidth_iPad 100.0f
+#define kPostGameNewHighScoreMenu_GameEquationsValueLabelHeight_iPad 80.0f
+// Game Time Text Label
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelX_iPad 144.0f
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelY_iPad 500.0f
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelWidth_iPad 400.0f
+#define kPostGameNewHighScoreMenu_GameTimeTextLabelHeight_iPad 80.0f
+// Game Time Value Label
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelX_iPad 514.0f
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelY_iPad 500.0f
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelWidth_iPad 100.0f
+#define kPostGameNewHighScoreMenu_GameTimeValueLabelHeight_iPad 80.0f
+// Play Again Button
+#define kPostGameNewHighScoreMenu_PlayAgainButtonX_iPad 184.0f
+#define kPostGameNewHighScoreMenu_PlayAgainButtonY_iPad 700.0f
+#define kPostGameNewHighScoreMenu_PlayAgainButtonWidth_iPad 400.0f
+#define kPostGameNewHighScoreMenu_PlayAgainButtonHeight_iPad 120.0f
+// Main Menu Button
+#define kPostGameNewHighScoreMenu_MainMenuButtonX_iPad 184.0f
+#define kPostGameNewHighScoreMenu_MainMenuButtonY_iPad 840.0f
+#define kPostGameNewHighScoreMenu_MainMenuButtonWidth_iPad 400.0f
+#define kPostGameNewHighScoreMenu_MainMenuButtonHeight_iPad 120.0f
