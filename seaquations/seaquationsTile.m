@@ -101,13 +101,13 @@
             [[self tileButton] setTitle:@"+" forState:UIControlStateNormal];
             break;
         case kOperatorSubtraction:
-            [[self tileButton] setTitle:@"-" forState:UIControlStateNormal];
+            [[self tileButton] setTitle:@"\u2212" forState:UIControlStateNormal];
             break;
         case kOperatorMultiplication:
-            [[self tileButton] setTitle:@"*" forState:UIControlStateNormal];
+            [[self tileButton] setTitle:@"\u00D7" forState:UIControlStateNormal];
             break;
         case kOperatorDivision:
-            [[self tileButton] setTitle:@"/" forState:UIControlStateNormal];
+            [[self tileButton] setTitle:@"\u00F7" forState:UIControlStateNormal];
             break;
         case kComparatorEquals:
             [[self tileButton] setTitle:@"=" forState:UIControlStateNormal];

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4D3CD714E65EDC00CBC330 /* LocalyticsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4D3CD114E65EDC00CBC330 /* LocalyticsDatabase.m */; };
+		1F4D3CD814E65EDC00CBC330 /* LocalyticsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4D3CD314E65EDC00CBC330 /* LocalyticsSession.m */; };
+		1F4D3CD914E65EDC00CBC330 /* UploaderThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4D3CD514E65EDC00CBC330 /* UploaderThread.m */; };
+		1F4D3CDF14E65F6000CBC330 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4D3CDE14E65F6000CBC330 /* libz.dylib */; };
+		1F4D3CE114E65F6F00CBC330 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4D3CE014E65F6F00CBC330 /* libsqlite3.dylib */; };
 		1F9A1A47144696EA000734A6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9A1A46144696EA000734A6 /* GameKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1FF0D13B144CB0DC00EBBF04 /* SeaquationsGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D13A144CB0DC00EBBF04 /* SeaquationsGameViewController.m */; };
 		1FF0D13E144CB0F800EBBF04 /* SeaquationsMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0D13D144CB0F800EBBF04 /* SeaquationsMenuViewController.m */; };
@@ -166,11 +171,18 @@
 		1FFE5A0213BFD705003D5673 /* Seaquations-SoundOnHD.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0013BFD705003D5673 /* Seaquations-SoundOnHD.png */; };
 		1FFE5A0413BFD87B003D5673 /* goVertexLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0313BFD87B003D5673 /* goVertexLogo.png */; };
 		1FFE5A0613BFD885003D5673 /* goVertexLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0513BFD885003D5673 /* goVertexLogo@2x.png */; };
-		1FFE5A0D13BFDBFE003D5673 /* LocalyticsSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0913BFDBFD003D5673 /* LocalyticsSession.m */; };
-		1FFE5A0E13BFDBFE003D5673 /* UploaderThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFE5A0B13BFDBFD003D5673 /* UploaderThread.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4D3CD014E65EDC00CBC330 /* LocalyticsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsDatabase.h; sourceTree = "<group>"; };
+		1F4D3CD114E65EDC00CBC330 /* LocalyticsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsDatabase.m; sourceTree = "<group>"; };
+		1F4D3CD214E65EDC00CBC330 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
+		1F4D3CD314E65EDC00CBC330 /* LocalyticsSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsSession.m; sourceTree = "<group>"; };
+		1F4D3CD414E65EDC00CBC330 /* UploaderThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploaderThread.h; sourceTree = "<group>"; };
+		1F4D3CD514E65EDC00CBC330 /* UploaderThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploaderThread.m; sourceTree = "<group>"; };
+		1F4D3CD614E65EDC00CBC330 /* WebserviceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceConstants.h; sourceTree = "<group>"; };
+		1F4D3CDE14E65F6000CBC330 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1F4D3CE014E65F6F00CBC330 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1F9A1A46144696EA000734A6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		1FF0D139144CB0DC00EBBF04 /* SeaquationsGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeaquationsGameViewController.h; sourceTree = "<group>"; };
 		1FF0D13A144CB0DC00EBBF04 /* SeaquationsGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeaquationsGameViewController.m; sourceTree = "<group>"; };
@@ -361,11 +373,6 @@
 		1FFE5A0013BFD705003D5673 /* Seaquations-SoundOnHD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seaquations-SoundOnHD.png"; sourceTree = "<group>"; };
 		1FFE5A0313BFD87B003D5673 /* goVertexLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goVertexLogo.png; sourceTree = "<group>"; };
 		1FFE5A0513BFD885003D5673 /* goVertexLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goVertexLogo@2x.png"; sourceTree = "<group>"; };
-		1FFE5A0813BFDBFD003D5673 /* LocalyticsSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalyticsSession.h; sourceTree = "<group>"; };
-		1FFE5A0913BFDBFD003D5673 /* LocalyticsSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalyticsSession.m; sourceTree = "<group>"; };
-		1FFE5A0A13BFDBFD003D5673 /* UploaderThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploaderThread.h; sourceTree = "<group>"; };
-		1FFE5A0B13BFDBFD003D5673 /* UploaderThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploaderThread.m; sourceTree = "<group>"; };
-		1FFE5A0C13BFDBFD003D5673 /* WebserviceConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebserviceConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +380,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4D3CE114E65F6F00CBC330 /* libsqlite3.dylib in Frameworks */,
+				1F4D3CDF14E65F6000CBC330 /* libz.dylib in Frameworks */,
 				1F9A1A47144696EA000734A6 /* GameKit.framework in Frameworks */,
 				1FFE58E813BF8A96003D5673 /* AudioToolbox.framework in Frameworks */,
 				1FFE58E613BF8A89003D5673 /* QuartzCore.framework in Frameworks */,
@@ -444,6 +453,8 @@
 		1FFE571A13BF85B8003D5673 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F4D3CE014E65F6F00CBC330 /* libsqlite3.dylib */,
+				1F4D3CDE14E65F6000CBC330 /* libz.dylib */,
 				1F9A1A46144696EA000734A6 /* GameKit.framework */,
 				1FFE58E713BF8A96003D5673 /* AudioToolbox.framework */,
 				1FFE58E513BF8A89003D5673 /* QuartzCore.framework */,
@@ -739,11 +750,13 @@
 		1FFE5A0713BFDBDE003D5673 /* Localytics */ = {
 			isa = PBXGroup;
 			children = (
-				1FFE5A0813BFDBFD003D5673 /* LocalyticsSession.h */,
-				1FFE5A0913BFDBFD003D5673 /* LocalyticsSession.m */,
-				1FFE5A0A13BFDBFD003D5673 /* UploaderThread.h */,
-				1FFE5A0B13BFDBFD003D5673 /* UploaderThread.m */,
-				1FFE5A0C13BFDBFD003D5673 /* WebserviceConstants.h */,
+				1F4D3CD014E65EDC00CBC330 /* LocalyticsDatabase.h */,
+				1F4D3CD114E65EDC00CBC330 /* LocalyticsDatabase.m */,
+				1F4D3CD214E65EDC00CBC330 /* LocalyticsSession.h */,
+				1F4D3CD314E65EDC00CBC330 /* LocalyticsSession.m */,
+				1F4D3CD414E65EDC00CBC330 /* UploaderThread.h */,
+				1F4D3CD514E65EDC00CBC330 /* UploaderThread.m */,
+				1F4D3CD614E65EDC00CBC330 /* WebserviceConstants.h */,
 			);
 			name = Localytics;
 			sourceTree = "<group>";
@@ -948,8 +961,6 @@
 				1FFE58DA13BF89EF003D5673 /* seaquationsTile.m in Sources */,
 				1FFE58DD13BF8A10003D5673 /* GVDecimalNumber.m in Sources */,
 				1FFE58E013BF8A1D003D5673 /* GVOperator.m in Sources */,
-				1FFE5A0D13BFDBFE003D5673 /* LocalyticsSession.m in Sources */,
-				1FFE5A0E13BFDBFE003D5673 /* UploaderThread.m in Sources */,
 				1FF0D13B144CB0DC00EBBF04 /* SeaquationsGameViewController.m in Sources */,
 				1FF0D13E144CB0F800EBBF04 /* SeaquationsMenuViewController.m in Sources */,
 				1FF0D141144CB10D00EBBF04 /* SeaquationsBackgroundViewController.m in Sources */,
@@ -961,6 +972,9 @@
 				1FF0D15A144CC47800EBBF04 /* SeaquationsMenuView_HowToPlayMenu.m in Sources */,
 				1FF0D15D144CC48A00EBBF04 /* SeaquationsMenuView_PostGameMenu.m in Sources */,
 				1FF0D160144CC4A200EBBF04 /* SeaquationsMenuView_PostGameMenuNewHighScore.m in Sources */,
+				1F4D3CD714E65EDC00CBC330 /* LocalyticsDatabase.m in Sources */,
+				1F4D3CD814E65EDC00CBC330 /* LocalyticsSession.m in Sources */,
+				1F4D3CD914E65EDC00CBC330 /* UploaderThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

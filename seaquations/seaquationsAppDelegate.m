@@ -815,7 +815,8 @@
     else
     {
         [tempButton setFrame:CGRectMake(0.0f, 0.0f, 44.0f, 44.0f)];
-        [[tempButton titleLabel] setFont:[UIFont boldSystemFontOfSize:24.0f]];
+        //[[tempButton titleLabel] setFont:[UIFont boldSystemFontOfSize:24.0f]];
+        [[tempButton titleLabel] setFont:[UIFont systemFontOfSize:28.0f]];
     }
     [tempButton setBackgroundImage:[self tileImageForSymbol:argTileType] forState:UIControlStateNormal];
     [tempButton setBackgroundImage:[self tileHighlightImageForSymbol:argTileType] forState:UIControlStateHighlighted];

@@ -45,10 +45,10 @@
         else
         {
             [tempDifficultyButtonAdditionSubtraction setFrame:CGRectMake(kGVMenuView_MainMenu_DifficultyEasyButtonX_iPhone, kGVMenuView_MainMenu_DifficultyEasyButtonY_iPhone, kGVMenuView_MainMenu_DifficultyEasyButtonWidth_iPhone, kGVMenuView_MainMenu_DifficultyEasyButtonHeight_iPhone)];
-            [[tempDifficultyButtonAdditionSubtraction titleLabel] setFont:[UIFont boldSystemFontOfSize:18.0f]];
+            [[tempDifficultyButtonAdditionSubtraction titleLabel] setFont:[UIFont boldSystemFontOfSize:15.0f]];
         }
         [tempDifficultyButtonAdditionSubtraction addTarget:[self delegate] action:@selector(mainMenu_DifficultyEasyButtonTapped) forControlEvents:UIControlEventTouchUpInside];
-        [tempDifficultyButtonAdditionSubtraction setTitle:@" + -" forState:UIControlStateNormal];
+        [tempDifficultyButtonAdditionSubtraction setTitle:@"   + \u2212" forState:UIControlStateNormal];
         [self addSubview:tempDifficultyButtonAdditionSubtraction];
         [self setDifficultyButtonEasy:tempDifficultyButtonAdditionSubtraction];
         // Difficulty Normal Button
@@ -61,10 +61,10 @@
         else
         {
             [tempDifficultyButtonAdditionSubtractionMultiplicationDivision setFrame:CGRectMake(kGVMenuView_MainMenu_DifficultyNormalButtonX_iPhone, kGVMenuView_MainMenu_DifficultyNormalButtonY_iPhone, kGVMenuView_MainMenu_DifficultyNormalButtonWidth_iPhone, kGVMenuView_MainMenu_DifficultyNormalButtonHeight_iPhone)];
-            [[tempDifficultyButtonAdditionSubtractionMultiplicationDivision titleLabel] setFont:[UIFont boldSystemFontOfSize:18.0f]];
+            [[tempDifficultyButtonAdditionSubtractionMultiplicationDivision titleLabel] setFont:[UIFont boldSystemFontOfSize:15.0f]];
         }
         [tempDifficultyButtonAdditionSubtractionMultiplicationDivision addTarget:[self delegate] action:@selector(mainMenu_DifficultyNormalButtonTapped) forControlEvents:UIControlEventTouchUpInside];
-        [tempDifficultyButtonAdditionSubtractionMultiplicationDivision setTitle:@"+ - * /" forState:UIControlStateNormal];
+        [tempDifficultyButtonAdditionSubtractionMultiplicationDivision setTitle:@"+ \u2212 \u00D7 \u00F7" forState:UIControlStateNormal];
         [self addSubview:tempDifficultyButtonAdditionSubtractionMultiplicationDivision];
         [self setDifficultyButtonNormal:tempDifficultyButtonAdditionSubtractionMultiplicationDivision];
         // High Score Button

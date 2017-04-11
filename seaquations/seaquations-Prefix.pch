@@ -20,7 +20,7 @@
 
 
 // Localytics - Release
-//#define LocalyticsIdentifier @"173a854c12034e94009cb75-d0b2977c-a4ff-11e0-01df-007f58cb3154"
+//#define LocalyticsIdentifier @"745a18c91b81b4c4410b416-3db8c0dc-548a-11e1-a9e0-008545fe83d2"
 // Localytics - Debug
 #define LocalyticsIdentifier @"7f39854431bf8cb1cf0c7db-a27a57ac-f9bc-11e0-8dc9-007bc6310ec9"
 

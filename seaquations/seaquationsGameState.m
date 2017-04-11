@@ -672,13 +672,13 @@
                 [equationString appendString:@"+"];
                 break;
             case kOperatorSubtraction:
-                [equationString appendString:@"-"];
+                [equationString appendString:@"\u2212"];
                 break;
             case kOperatorMultiplication:
-                [equationString appendString:@"*"];
+                [equationString appendString:@"\u00D7"];
                 break;
             case kOperatorDivision:
-                [equationString appendString:@"/"];
+                [equationString appendString:@"\u00F7"];
                 break;
             case kOperatorDecimalPoint:
                 [equationString appendString:@"."];
